@@ -1,0 +1,63 @@
+.banner-main2{
+    background: url('./../../../images/bg2.avif');
+    background-size: cover;
+    background-position:center;
+    width: 100%;
+    height: 400px;
+}
+
+.banner2{
+    margin-top:-4px;
+    border-radius:400px;
+}
+
+.banner{
+    margin-top:140px;
+    color:white;
+    
+}
+
+.banner-title22{
+    font-size:20px;
+    margin-top:60px;
+    font-weight:50;
+    color:black;
+    /* margin-bottom:180px; */
+    font-family:'Roboto Condensed', sans-serif;
+}
+
+.heading2{
+    font-size:40px;
+    color:rgb(245, 38, 100);
+}
+.para6{
+    color: black;
+}
+
+.puschase{
+    background-color:rgb(245, 38, 100) ;
+    font-size:17px;
+    color: white;
+    padding:5px;
+    border:  rgb(245, 38, 100);
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.demo{
+    margin-left: 10px;
+    font-size:17px;
+    padding: 5px;
+    border: white;
+    padding-left: 19px;
+    padding-right: 19px;
+    color: rgb(245, 38, 100);
+}
+
+.text{
+    color:white;
+}
+
+.inline{
+    display:block;
+}

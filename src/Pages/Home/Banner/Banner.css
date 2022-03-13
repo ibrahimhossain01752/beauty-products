@@ -1,0 +1,64 @@
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat scroll center scroll;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.colec{
+    display: block;
+    margin-right:154px;
+}
+.colec2{
+    display: block;
+}
+
+.beauti-title{
+    font-size:45px;
+    font-weight: 700;
+}
+
+.para1{
+    color: black;
+    margin-right:257px;
+    font-weight:50;
+}
+.para2{
+    color: black;
+    margin-right:287px;
+    font-weight:50;
+}
+
+.btn btn-1{
+    margin-right:300px;
+}
+.carousel-item::before{
+    content: "";
+    display: block;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background:white;
+    opacity: 0.1;
+}
+
+.carousel-caption{
+    bottom:300px;
+    /* padding-: 100px; */
+    padding-right: 550px;
+}
+/* .item-2{
+    bottom:130px;
+  
+    padding-left: 370px;
+} */
+
+.style-image{
+   margin-bottom: 280px;
+    padding-left: 160px;
+}
+
+

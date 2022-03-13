@@ -1,0 +1,23 @@
+.homecard{
+    margin-top:100px;
+}
+
+.horizontal{
+    width:100%;
+    font-weight: 400;
+    padding: 1px;
+    background-color: white;
+    /* margin-left:30px; */
+}
+
+.since{
+    margin-right:auto;
+    margin-top: -306px;
+    color: white;
+    padding:5px;
+    background-color: rgb(245, 38, 100);
+}
+
+.card-body1{
+    margin-top:250px;
+}
