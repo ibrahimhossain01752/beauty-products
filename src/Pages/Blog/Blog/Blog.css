@@ -1,0 +1,94 @@
+.articles{
+    background-color: rgb(245, 38, 100);
+    color: white;
+    padding:14px;
+    border-radius: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.card-images{
+    width:75px;
+    height:45px;
+}
+
+.card-inform{
+    margin-top:-53px;
+    margin-left: 90px;
+    
+}
+
+.naliling{
+    display: inline;
+}
+
+.para10{
+    margin-left: 90px;
+}
+
+.since1{
+    margin-right:auto;
+    margin-top: -255px;
+    color: white;
+    padding:5px;
+    background-color: rgb(245, 38, 100);
+}
+
+.card-title25{
+    margin-bottom: 40px;
+}
+
+
+/* .nails4{
+    display:block;
+} */
+
+.card-header1{
+    margin-bottom:90px;
+    text-align:center;
+}
+
+.card-text6{
+    text-align:center;
+}
+
+.header-section1{
+    margin-top:200px;
+}
+
+.header-para1{
+    margin-top:-30px;
+}
+
+.span1{
+    display:block;
+}
+.span2{
+    display:block;
+}
+.span3{
+    display:block;
+}
+.span4{
+    display:block;
+}
+.span6{
+    display:block;
+}
+.span7{
+    display:block;
+}
+
+.header2::before{
+    color:black
+}
+.header2::after{
+    color:rgb(245, 38, 100);
+}
+
+.button1{
+    border-color:rgb(245, 38, 100) ;
+    background-color: white;
+    padding:5px;
+    /* margin-top: -20px; */
+}

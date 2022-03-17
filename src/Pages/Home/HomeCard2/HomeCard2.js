@@ -14,8 +14,8 @@ const HomeCard2 = () => {
         <h6>March 2022</h6>
        </div>
       <div class="card-body1">
-        <h5 class="card-title mb-5">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <h5 class="card-title23 mb-5"><span className="nails">Nailing it with pink requires attitudes</span></h5>
+        <p class="card-text5 text-start ml-2"> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.  </p>
       </div>
     </div>
   </div>
@@ -28,8 +28,8 @@ const HomeCard2 = () => {
         <h6>March 2022</h6>
        </div>
       <div class="card-body1">
-        <h5 class="card-title mb-5">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <h5 class="card-title24 mb-5"><span className="nails">Maintaing your makeup brush cleaners</span></h5>
+      <p class="card-text5 text-start ml-2 "> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.  </p>
       </div>
     </div>
   </div>

@@ -17,7 +17,7 @@ const Products = () => {
             {newServices.map((pd,idx)=>(
                 <div class="col">
                 <div class="card h-100 ">
-                 <div class="imgBx">
+                 <div class="imgBx images55">
                  <img src={pd?.img} class="card-img-top " alt="..."/>
                  </div>
                   <div class="card-body contentBx ">
