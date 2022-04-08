@@ -117,7 +117,13 @@ ul.colors li:nth-child(5) {
     font-size: 13px;
     border-radius: 2px
 }
-
+.btn23{
+    background-color: rgb(245, 38, 100);
+    color: #fff;
+    border-color: rgb(245, 38, 100);
+    border-radius:3px;
+    padding: 5px;
+}
 /* .images55{
     width: 50%;
     height: 100%;
