@@ -29,6 +29,25 @@
     margin-right:287px;
     font-weight:50;
 }
+.para3{
+    color: black;
+    margin-right:-396px;
+    font-weight:50;
+}
+.para4{
+    color: black;
+    margin-right:-630px;
+    font-weight:400;
+}
+.para5{
+    color: black;
+    margin-right:-360px;
+    font-weight:50;
+}
+/* .colec1{
+    margin-right:-5px;
+} */
+
 
 .btn btn-1{
     margin-right:300px;
@@ -61,4 +80,6 @@
     padding-left: 160px;
 }
 
-
+.span1{
+    display:block;
+}
