@@ -9,6 +9,7 @@ const Login = () => {
    
     let location = useLocation();
     let navigate = useNavigate();
+    // const redirect = location.state?.from || "/home";
 
     const handleOnChange = e => {
         const filed = e.target.name;
@@ -20,8 +21,15 @@ const Login = () => {
     }
     const handleSigninSubmit = e => {
         loginUser(loginData.email, loginData.password, location, navigate);
+        // redirect.push(redirect);
         e.preventDefault();
     }
+
+  //   const handleGoogleSignIn = () => {
+  //     signInWithGoogle(location, history)
+  //     history.push(redirect);
+  // }
+
     return (
         <div className="banner-main banner-overlay">
              <div class="container">

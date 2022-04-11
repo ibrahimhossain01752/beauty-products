@@ -14,14 +14,18 @@ const useFirebase  = () => {
     const auth = getAuth();
     const googleProvider = new GoogleAuthProvider();
 
-    const registerUser = (email, password) => {
+    const registerUser = (email, password, name, navigate) => {
         setIsLoading(true);
-        createUserWithEmailAndPassword(auth, email, password)
+        createUserWithEmailAndPassword(auth, email,  password)
         .then((userCredential) => {
             // Signed in 
             // const user = userCredential.user;
             setAuthError('');
+            const newUser = { email, displayName: name };
+            setUser(newUser);
+            StoreUserInformation(newUser);
             // ...
+            navigate.replace('/home');
           })
           .catch((error) => {
            
@@ -47,16 +51,20 @@ const useFirebase  = () => {
       
     }
 
-    const signInUsingGoogle = () =>{
+    const signInUsingGoogle = (location, navigate) =>{
+      setIsLoading(true);
         signInWithPopup(auth, googleProvider)
         .then(result =>{
-            console.log(result.user);
-            setUser(result.user);
+            // console.log(result.user);
+            // setUser(result.user);
+            const user = result.user;
+              setAuthError('');
+              StoreUserInformation(result.user.name, result.user.email);
         })
         .catch(error =>{
             setError(error.message);
         })
-
+        .finally(() => setIsLoading(false));
        
     }
 
@@ -86,6 +94,16 @@ const useFirebase  = () => {
           })
           .finally(() => setIsLoading(false));
     }
+
+    // resgisteratiuon information is storeing firebase & also my database mongobd......
+  const StoreUserInformation = ({name, email}) => {
+    fetch('http://localhost:5000/signup/userInformation', {
+      method: 'POST',
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({name, email})
+    }).then(res => res.json())
+      .then(data => console.log(data))
+   }
    
     return{
         user,

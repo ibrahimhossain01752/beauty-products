@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import './Register.css';
 // import './Login.css';
 
 const Register = () => {
-    const [loginData, setLoginData] = useState({})
+    const [loginData, setLoginData] = useState({});
+    const navigate = useNavigate();
     const {user, authError, registerUser, isLoading} = useAuth();
     
 
@@ -23,7 +24,7 @@ const Register = () => {
             return
         }
         console.log(loginData.email,loginData.password);
-         registerUser(loginData.email, loginData.password)
+         registerUser(loginData.email, loginData.password, loginData.name, navigate);
          e.preventDefault();
        
         //e.preventDefault();
