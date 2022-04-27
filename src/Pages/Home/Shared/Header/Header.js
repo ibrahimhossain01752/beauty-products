@@ -16,8 +16,11 @@ const Header = () => {
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
                         <Nav.Link as={HashLink} className="text-light" to="/home">Home</Nav.Link>
-                        {user?.email && <Nav.Link as={HashLink} className="text-light" to="/collections">Colllection</Nav.Link>}
-                        {user?.email && <Nav.Link as={HashLink} className="text-light" to="/blogs">Blogs</Nav.Link>}
+                        <Nav.Link as={HashLink} className="text-light" to="/Collection">Colllection</Nav.Link>
+                         <Nav.Link as={HashLink} className="text-light" to="/blogs">Blogs</Nav.Link>
+                        {/* {user?.email && <Nav.Link as={HashLink} className="text-light" to="/collections">Colllection</Nav.Link>}
+                        {user?.email && <Nav.Link as={HashLink} className="text-light" to="/blogs">Blogs</Nav.Link>} */}
+                        {user?.email && <Nav.Link as={HashLink} className="text-light" to="/login">Login</Nav.Link>}
                         <Navbar.Text><a href="#login" className="text-decoration-none p-2 text-warning"> {user?.displayName} </a> </Navbar.Text>
                         {user?.email ?
                             <Button className="btn11" onClick={logout} variant="primary">logOut</Button>

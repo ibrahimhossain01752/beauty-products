@@ -6,7 +6,7 @@ import './Cosmetics.css';
 const Cosmetics = () => {
     const [services, setServices] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/products2')
+        fetch('http://localhost:5000/Collection')
         .then(res => res.json())
         .then(data => setServices(data))
     },[]);
@@ -23,7 +23,7 @@ const Cosmetics = () => {
                       <div class="card-body contentBx ">
                         <h5 class="card-title">{pd?.title}</h5>
                         <p class="card-text">{pd?.price}</p>
-                        <Link to={`/products2/${pd._id}`}>{" "}
+                        <Link to={`/Collection/${pd._id}`}>{" "}
                         <button class="btn23">Shop Now</button>
                         </Link>
                         </div>

@@ -8,7 +8,14 @@ import Collections from './Pages/Collection/Collections';
 import Home from './Pages/Home/Home/Home';
 import Header from './Pages/Home/Shared/Header/Header';
 import Login from './Pages/Login/Login/Login';
+import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
+// import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
+// import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import Register from './Pages/Login/Register/Register';
+import PlaceOrder from './Pages/PlaceOrder/PlaceOrder/PlaceOrder';
+
+// import PlaceOrder from './Pages/PlaceOrder/PlaceOrder';
+// import PlaceOrder from './Pages/PlaceOrder/PlaceOrder';
 
 
 
@@ -21,7 +28,12 @@ function App() {
        <Header></Header>
       <Routes>
         <Route path="/home" element={<Home />} />
-        <Route path="/collections" element={<Collections />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/Collection" element={<Collections />} />
+        <Route path="/Collection/:id" element={<PrivateRoute><PlaceOrder /></PrivateRoute>} />
+        <Route path="/placeorder" element={<PrivateRoute><PlaceOrder /></PrivateRoute>} />
+        {/* <Route path="/collections/:id" element={<PrivateRoute><PlaceOrde/></PrivateRoute>} />
+        <Route path="/placeorder" element={<PrivateRoute><PlaceOrder/></PrivateRoute>} /> */}
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />

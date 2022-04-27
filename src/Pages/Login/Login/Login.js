@@ -5,11 +5,11 @@ import './Login.css';
 
 const Login = () => {
     const [loginData, setLoginData] = useState({});
-    const {user, loginUser, isLoading, authError, signInUsingGoogle} = useAuth();
+    const {user, loginUser, isLoading, signInUsingGoogle, authError} = useAuth();
    
-    let location = useLocation();
+    const location = useLocation();
     let navigate = useNavigate();
-    // const redirect = location.state?.from || "/home";
+     const redirect = location.state?.from || "/home";
 
     const handleOnChange = e => {
         const filed = e.target.name;
@@ -21,14 +21,14 @@ const Login = () => {
     }
     const handleSigninSubmit = e => {
         loginUser(loginData.email, loginData.password, location, navigate);
-        // redirect.push(redirect);
+        navigate.push(redirect);
         e.preventDefault();
     }
 
-  //   const handleGoogleSignIn = () => {
-  //     signInWithGoogle(location, history)
-  //     history.push(redirect);
-  // }
+    const handleGoogleSignIn = () => {
+      signInUsingGoogle(location, navigate);
+      navigate.push(redirect);
+  }
 
     return (
         <div className="banner-main banner-overlay">
@@ -60,7 +60,7 @@ const Login = () => {
               </div>
               <hr class="my-4"/>
               <div class="d-grid mb-2">
-                <button class="btn btn-google btn-login text-uppercase fw-bold" type="submit" onClick={signInUsingGoogle}>
+                <button class="btn btn-google btn-login text-uppercase fw-bold" type="submit" onClick={handleGoogleSignIn}>
                   <i class="fab fa-google me-2"></i> Sign in with Google
                 </button>
               </div>
