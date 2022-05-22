@@ -5,7 +5,7 @@ import './Login.css';
 
 const Login = () => {
     const [loginData, setLoginData] = useState({});
-    const {user, loginUser, isLoading, signInUsingGoogle, authError} = useAuth();
+    const {user, loginUser, isLoading, signInWithGoogle, authError} = useAuth();
    
     const location = useLocation();
     let navigate = useNavigate();
@@ -26,7 +26,7 @@ const Login = () => {
     }
 
     const handleGoogleSignIn = () => {
-      signInUsingGoogle(location, navigate);
+      signInWithGoogle(location, navigate);
       navigate.push(redirect);
   }
 
@@ -58,9 +58,10 @@ const Login = () => {
                 <button class="btn btn-primary btn-login text-uppercase fw-bold" type="submit">Sign
                   in</button>
               </div>
+              </form>
               <hr class="my-4"/>
               <div class="d-grid mb-2">
-                <button class="btn btn-google btn-login text-uppercase fw-bold" type="submit" onClick={handleGoogleSignIn}>
+                <button class="btn btn-google btn-login text-uppercase fw-bold" type="" onClick={handleGoogleSignIn}>
                   <i class="fab fa-google me-2"></i> Sign in with Google
                 </button>
               </div>
@@ -82,7 +83,7 @@ const Login = () => {
         {authError && <div class="alert alert-danger" role="alert">
   {authError}
 </div>}
-            </form>
+            {/* </form> */}
           </div>
         </div>
       </div>

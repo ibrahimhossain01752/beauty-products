@@ -1,0 +1,72 @@
+.dashboard {
+    background-color: rgba(14, 213, 240, 0.925);
+    height: 100vh;
+    color: white;
+    cursor: pointer;
+    margin-bottom: -64px;
+    margin-top: -48px;
+    text-decoration: none;
+    margin-right: 0px;
+    width: 100%;
+    
+  }
+  .dashboard-menu {
+    list-style: none;
+    margin-top: 10px;
+    margin-right: 10px;
+    
+  }
+  .dashboard-menu:hover {
+    color: cyan;
+  }
+  
+  li{
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .dec-1{
+    text-decoration: none;
+    
+  }
+
+  .das{
+    margin-right: 10px;
+    color:black;
+  }
+  .das-1{
+    margin-right: 5px;
+    color:black;
+  }
+  .book{
+    margin-left: 10px;
+  }
+  .pay{
+    margin-right: 28px;
+  }
+ 
+ .abul{
+   text-decoration: none;
+ }
+
+ .das-2{
+  margin-right: 40px;
+  color:black;
+ }
+
+ .review{
+  margin-left: -10px;
+ }
+
+ 
+
+  @media only screen and (max-width: 600px) {
+    dashboard-container {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    dashboard {
+      width: 100%;
+    }
+  }

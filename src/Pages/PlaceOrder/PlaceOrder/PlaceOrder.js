@@ -166,11 +166,29 @@ const PlaceOrder = () => {
             <div className="">
               <form onSubmit={handleSubmit(onSubmit)}>
               <input {...register("name")} readOnly  defaultValue={user?.displayName} type="text"   placeholder="Name" class="p-2 m-2 w-100 input-field"/>
+             
                       <input readOnly  defaultValue={user?.email}
                   {...register("email")} type="email"  placeholder="Email" class="p-2 m-2 w-100 input-field"/>
-                        <input {...register("phone")} readOnly type="phone number"  placeholder="Phone Number" class="p-2 m-2 w-100 input-field"/>
-                        <input   {...register("city")} readOnly type="city"  placeholder="City" class="p-2 m-2 w-100 input-field"/>
-                        <input   {...register("data", { required: true })} readOnly type="date" placeholder="Date" class="p-2 m-2 w-100 input-field"/>
+                  <input
+                  {...register("phone")}
+                  placeholder="Phone Number"
+                  className="p-2 m-2 w-100 input-field"
+                />
+                        {/* <input {...register("phone")} readOnly type="phone number"  placeholder="Phone Number" class="p-2 m-2 w-100 input-field"/> */}
+                        {/* <input   {...register("city")} readOnly type="city"  placeholder="City" class="p-2 m-2 w-100 input-field"/> */}
+                        {/* <input   {...register("data", { required: true })} readOnly type="date" placeholder="Date" class="p-2 m-2 w-100 input-field"/> */}
+                        <input
+                  {...register("city")}
+                  placeholder="City"
+                  className="p-2 m-2 w-100 input-field"
+                />
+
+                <input
+                  {...register("data", { required: true })}
+                  placeholder="Date"
+                  type="date"
+                  className="p-2 m-2 w-100 input-field"
+                />
                         <br/>
                         {errors.exampleRequired && <span>This field is required</span>}
 

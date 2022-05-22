@@ -3,7 +3,7 @@ import initializeFirebase from "../Pages/Login/firebase/firebase.init";
 import { getAuth, signInWithPopup, GoogleAuthProvider, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut } from "firebase/auth";
 
 
-//initializeFirebase App
+
 initializeFirebase();
 const useFirebase  = () => {
     const [user, setUser] = useState({});
@@ -14,26 +14,28 @@ const useFirebase  = () => {
     const auth = getAuth();
     const googleProvider = new GoogleAuthProvider();
 
+
+
     const registerUser = (email, password, name, navigate) => {
-        setIsLoading(true);
-        createUserWithEmailAndPassword(auth, email,  password)
-        .then((userCredential) => {
-            // Signed in 
-            // const user = userCredential.user;
-            setAuthError('');
-            const newUser = { email, displayName: name };
-            setUser(newUser);
-            StoreUserInformation(newUser);
-            // ...
-            navigate('/');
+      setIsLoading(true);
+      createUserWithEmailAndPassword(auth, email, password)
+          .then((userCredential) => {
+              setAuthError('');
+              const newUser = { email, displayName: name };
+              setUser(newUser);
+              StoreUserInformation(newUser);
+             
+
+              navigate.replace('/home');
           })
           .catch((error) => {
+              setAuthError(error.message);
            
-             setAuthError(error.message);
-            // ..
           })
-          .finally(() => setIsLoading(false))
-    }
+          .finally(() => setIsLoading(false));
+  }
+
+   
 
     const loginUser = (email, password, location, navigate) => {
         setIsLoading(true);
@@ -52,23 +54,27 @@ const useFirebase  = () => {
       
     }
 
-    const signInUsingGoogle = (location, navigate) =>{
-      setIsLoading(true);
-        signInWithPopup(auth, googleProvider)
-        .then(result =>{
-            
-            const user = result.user;
-              setAuthError('');
-              StoreUserInformation(result.user.name, result.user.email);
-        })
-        .catch(error =>{
-            setError(error.message);
-        })
-        .finally(() => setIsLoading(false));
-       
-    }
+  
 
-    //observer user strate 
+    const signInWithGoogle = (location, navigate) => {
+      setIsLoading(true);
+      signInWithPopup(auth, googleProvider)
+          .then((result) => {
+            const user = result.user;
+            setAuthError('');
+            StoreUserInformation(result.user.name, result.user.email);
+
+          }).catch((error) => {
+
+              setAuthError(error.message);
+              
+          })
+          .finally(() => setIsLoading(false));
+
+  }
+
+
+  
     useEffect(() => {
      const unsubscribed =   onAuthStateChanged(auth, (user) => {
             if (user) {
@@ -88,15 +94,15 @@ const useFirebase  = () => {
     const logout = () => {
         setIsLoading(true);
         signOut(auth).then(() => {
-            // Sign-out successful.
+           
           }).catch((error) => {
-            // An error happened.
+            
           })
           .finally(() => setIsLoading(false));
     }
 
-    // resgisteratiuon information is storeing firebase & also my database mongobd......
-  const StoreUserInformation = ({name, email}) => {
+   
+  const  StoreUserInformation = ({ email, name}) => {
     fetch('http://localhost:5000/signup/userInformation', {
       method: 'POST',
       headers: { "content-type": "application/json" },
@@ -108,7 +114,7 @@ const useFirebase  = () => {
     return{
         user,
         error,
-        signInUsingGoogle,
+        signInWithGoogle,
         isLoading,
         authError,
         registerUser,
@@ -117,3 +123,12 @@ const useFirebase  = () => {
     }
 }
 export default useFirebase;
+
+
+
+
+
+
+
+
+

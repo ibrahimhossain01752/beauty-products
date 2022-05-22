@@ -10,7 +10,7 @@ const Banner = () => {
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-          {/* <div class="carousel-item active">
+          <div class="carousel-item active">
             <img src="
 https://cdn.shopify.com/s/files/1/0195/5145/3248/files/slider-1_2000x.jpg?v=1572581662
 " class="d-block w-100" alt="..."/>
@@ -21,8 +21,8 @@ https://cdn.shopify.com/s/files/1/0195/5145/3248/files/slider-1_2000x.jpg?v=1572
             
             </div>
            
-          </div> */}
-          {/* <div class="carousel-item active">
+          </div>
+          <div class="carousel-item ">
            <div>
               <img src="
 https://cdn.shopify.com/s/files/1/0195/5145/3248/files/slider-2_bd13fd4a-b427-4949-8025-288b3a744835_2000x.jpg?v=1572581683" class="d-block w-100" alt="..."/>
@@ -34,8 +34,8 @@ https://cdn.shopify.com/s/files/1/0195/5145/3248/files/slider-2_bd13fd4a-b427-49
               
              
             </div>
-          </div> */}
-          <div class="carousel-item active">
+          </div>
+          <div class="carousel-item ">
             <img src="https://cdn.shopify.com/s/files/1/0195/5145/3248/files/slider-3-1_2000x.jpg?v=1572863329
 " class="d-block w-100" alt="..."/>
             <div class="carousel-caption d-none d-md-block">

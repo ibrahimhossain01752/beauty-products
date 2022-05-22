@@ -27,6 +27,7 @@ const Header = () => {
                             :
                             <Nav.Link as={Link} to="/login">Login</Nav.Link>
                         }
+                        {user?.email && <Nav.Link as={HashLink} className="text-light" to="/dashboard">Dashboard</Nav.Link>}
 
                         {/* <Navbar.Text><a href="#login" className="text-decoration-none ">  {user?.displayName}</a> </Navbar.Text> */}
                     </Navbar.Collapse>

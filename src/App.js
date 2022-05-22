@@ -5,6 +5,8 @@ import AuthProvider from './contexts/AuthProvider/AuthProvider';
 import Footer from './Footer/Footer';
 import Blogs from './Pages/Blog/Blog/Blogs';
 import Collections from './Pages/Collection/Collections';
+import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
+// import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
 import Home from './Pages/Home/Home/Home';
 import Header from './Pages/Home/Shared/Header/Header';
 import Login from './Pages/Login/Login/Login';
@@ -32,11 +34,13 @@ function App() {
         <Route path="/Collection" element={<Collections />} />
         <Route path="/Collection/:id" element={<PrivateRoute><PlaceOrder /></PrivateRoute>} />
         <Route path="/placeorder" element={<PrivateRoute><PlaceOrder /></PrivateRoute>} />
+        <Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>} />
         {/* <Route path="/collections/:id" element={<PrivateRoute><PlaceOrde/></PrivateRoute>} />
         <Route path="/placeorder" element={<PrivateRoute><PlaceOrder/></PrivateRoute>} /> */}
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        {/* <Route path="/dashboard" element={<Dashboard />} /> */}
        
         {/* <Route path="users/*" element={<Users />} /> */}
       </Routes>
