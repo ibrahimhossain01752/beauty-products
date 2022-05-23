@@ -1,9 +1,24 @@
 import React, { useEffect, useState } from 'react';
+// import './Dashboard.css';
 import './Dashboard.css';
-import {BrowserRouter, Routes, Route, Link , useMatch} from 'react-router-dom';
+import { Routes, Route, Link , useMatch} from 'react-router-dom';
 // import useFirebase from '../../../hooks/useFirebase';
-import MyBooking from './MyBooking/MyBooking';
-import useFirebase from '../../../hooks/useFirebase';
+// import MyBooking from './MyBooking/MyBooking';
+// import useFirebase from '../../../hooks/useFirebase';
+// import Review from './Review/Review';
+// import Payments from './Payments/Payments';
+// import ManageOrder from './ManageOrder/ManageOrder';
+// import MakeAdmin from './MakeAdmin/MakeAdmin';
+// import AddService from './AddService/AddService';
+// import ManageService from './ManageService/ManageService';
+import useFirebase from '../../../../hooks/useFirebase';
+import Review from '../Review/Review';
+import MyBooking from '../MyBooking/MyBooking';
+import Payments from '../Payments/Payments';
+import ManageOrder from '../ManageOrder/ManageOrder';
+import MakeAdmin from '../MakeAdmin/MakeAdmin';
+import AddService from '../AddService/AddService';
+import ManageService from '../ManageService/ManageService';
 
 const Dashboard = () => {
      let { path, url } = useMatch;
@@ -44,10 +59,10 @@ const Dashboard = () => {
                         <Link class="abul" to={`${url}/myBooking`}>
                         <li class="dashboard-menu mt-5 text-decoration-none book"><i class="bi bi-bag-fill das"></i>My-Booking</li>
                         </Link>
-                        <Link class="abul" to="">
+                        <Link class="abul" to={`${url}/payments`}>
                         <li class="dashboard-menu mt-5 text-decoration-none pay"><i class="bi bi-credit-card-2-front-fill das-1"></i>Payments</li>
                         </Link>
-                        <Link class="abul lotif" to="">
+                        <Link class="abul lotif" to={`${url}/review`}>
                         <li class="dashboard-menu mt-5 text-decoration-none review"><i class="bi bi-award-fill das-2"></i>Review</li>
                         </Link>
                        </div>
@@ -73,25 +88,24 @@ const Dashboard = () => {
                       
                   </div>
                   <div class="col-md-9">
-                    <BrowserRouter>
+                    {/* <BrowserRouter> */}
                        <Routes>
                        <Route path={path} element={<MyBooking />} />
+                       <Route path={`${path}/review`} element={<Review />} />
+                       <Route path={`${path}/myBooking`} element={<MyBooking />} />
+                       <Route path={`${path}/payments`} element={<Payments />} />
+                       <Route path={`${path}/manageOrder`} element={<ManageOrder/>} />
+                       <Route path={`${path}/makeAdmin`} element={<MakeAdmin />} />
+                       <Route path={`${path}/addService`} element={<AddService />} />
+                       <Route path={`${path}/manageServices`} element={<ManageService />} />
                        </Routes>
-                    </BrowserRouter>
+                    {/* </BrowserRouter> */}
                   </div>
                </div> 
             </div> 
         </div>
 
-    //  <div>
-    //     <div class="dashboard-container mt-5">
-    //         <div class="row">
-    //             <div>
-
-    //             </div>
-    //         </div>
-    //     </div>
-    //  </div>
+  
     );
 };
 
