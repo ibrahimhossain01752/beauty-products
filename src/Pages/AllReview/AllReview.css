@@ -7,6 +7,7 @@
 .carousel-control-prev,
 carousel-control-next{
     background: transparent;
+    margin-bottom: -50px;
 }
 .img-area{
     width: 100px;
@@ -19,7 +20,7 @@ carousel-control-next{
 .img-area img{
     width: 100%;
 }
-.carousel-caption{
+.carousel-captioned{
     position:static;
     padding-bottom: 15px;
     padding-top:0px;
@@ -27,18 +28,20 @@ carousel-control-next{
 
 .images-review{
     align-items: center;
-    margin-left: 470px;
-    border-radius:90px;
+    margin-left: 510px;
+    border-radius:50%;
 }
 .text-name{
     align-items: center;
     justify-content: center;
-    margin-left:125px;
+    margin-left:0px;
    padding: 10px;
    width: 100%;
+   font-family: 'Oswald', sans-serif;
 }
 .text-name{
     display: inline-block;
+    color:#fff;
 }
 .review-bg{
     background-color: rgba(0, 0, 255, 0.431);
@@ -50,4 +53,15 @@ carousel-control-next{
 .review-star{
     width: 100%;
     margin-left:25px;
+    
+}
+.review-slide{
+    height:270px;
+    background-color: rgb(2, 2, 43);
+}
+.comments{
+    color: azure;
+}
+.rating-color{
+    color:rgb(254, 12, 52);
 }
