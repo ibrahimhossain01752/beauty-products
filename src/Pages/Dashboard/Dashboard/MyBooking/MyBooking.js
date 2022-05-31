@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import useFirebase from '../../../../hooks/useFirebase';
+import useAuth from '../../../../hooks/useAuth';
+import './MyBooking.css';
+// import useFirebase from '../../../../hooks/useFirebase';
 // import useFirebase from '../../hooks/useFirebase';
 
 const MyBooking = () => {
-    const {user} = useFirebase;
+    // const {user} = useFirebase;
+    const { user} = useAuth();
+    console.log(user)
     const [orders, setOrders] = useState([]);
-    const [IsDelete, setIsDelete] = useState(false);
+    const [IsDelete, setIsDelete] = useState(true);
 
     useEffect(()=>{
         fetch(`http://localhost:5000/dashboard/myBooking?email=${user?.email}`)
@@ -33,16 +37,24 @@ const MyBooking = () => {
         }
     }
     return (
-        <div>
-            <h1>All Orders {orders.length}</h1>
-            <table class="table">
-  <thead>
+
+        
+        <div className="container ">
+           <div class="orders2 mx-auto">
+           
+           <h2 class="table1">All Orders{orders.length}</h2>
+           {/* <h2>My BookingList</h2> */}
+          
+           </div>
+            <table class="table table table-success table-striped">
+  <thead class="">
+  
     <tr>
       <th scope="col">#</th>
       <th scope="col">Image</th>
       <th scope="col">Name</th>
       <th scope="col">Phone</th>
-      <th scope="col">Product Id</th>
+      <th scope="col">Email</th>
       <th scope="col">Status</th>
       <th scope="col">Action</th>
     </tr>
@@ -53,12 +65,12 @@ const MyBooking = () => {
         
         <td>{index}</td>
         <td><img src={pd?.img} alt="fsd" class="w-25 h-25"/></td>
-        <td>{pd?.name}</td>
-        <td>{pd?.email}</td>
+        <td>{pd?.displayName}</td>
         <td>{pd?.phone}</td>
+        <td>{pd?.email}</td>
         <td>{pd?.key}</td>
-        <td>{pd?.status}</td>
-        <button onClick={()=> Delete(pd?._id)} class="btn bg-danger">Delete</button>
+        <td class="status">{pd?.status}</td>
+        <button onClick={()=> Delete(pd?._id)} class="btn bg-danger delete-card">Delete</button>
       </tr>
       
       

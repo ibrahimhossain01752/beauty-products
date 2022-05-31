@@ -1,0 +1,53 @@
+.slider-area{
+    background: #262626;
+    padding: 50px 0;
+    position: relative;
+    margin:120px 0;
+}
+.carousel-control-prev,
+carousel-control-next{
+    background: transparent;
+}
+.img-area{
+    width: 100px;
+    height: 100px;
+    margin:  auto;
+    border:2px solid #fff;
+    border-radius:50%;
+    overflow: hidden;
+}
+.img-area img{
+    width: 100%;
+}
+.carousel-caption{
+    position:static;
+    padding-bottom: 15px;
+    padding-top:0px;
+}
+
+.images-review{
+    align-items: center;
+    margin-left: 470px;
+    border-radius:90px;
+}
+.text-name{
+    align-items: center;
+    justify-content: center;
+    margin-left:125px;
+   padding: 10px;
+   width: 100%;
+}
+.text-name{
+    display: inline-block;
+}
+.review-bg{
+    background-color: rgba(0, 0, 255, 0.431);
+}
+.comments-review{
+    width: 100%;
+    margin-left:125px;
+}
+.review-star{
+    width: 100%;
+    margin-left:25px;
+}

@@ -3,7 +3,32 @@ import './HomeCard.css';
 
 const HomeCard2 = () => {
     return (
-        <div className="container homecard">
+        <div className="container homecard mt-5">
+          <div class="section-header section-header--small">
+        <div class="border-title">
+                      
+          
+          <h2 class="section-header__title mb-4" >    
+            Latest Post
+          </h2>
+            
+            
+          
+        </div>
+      </div> 
+
+      {/* <div class="blog-section">
+        <div class="nav_blog_sec disabled">
+          <div class="owl-prev">
+            <a class="prev btn"><i class="bi bi-caret-left-fill"></i></a>
+          </div>
+          <div class="owl-next">
+            <a class="next btn"><i class="bi bi-caret-right-fill"></i></a> 
+          </div>
+          <div class="home-blog blog-section  owl-carousel owl-theme owl-loaded owl-drag" id="artical_carousel"> 
+          </div>
+        </div>
+        </div>  */} 
             <div class="row row-cols-1 row-cols-md-2 g-4">
   <div class="col">
     <div class="card ">

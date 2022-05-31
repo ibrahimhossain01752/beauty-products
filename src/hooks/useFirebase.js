@@ -89,7 +89,9 @@ const useFirebase  = () => {
             
           });
           return () => unsubscribed;
-    },[])
+    },[auth])
+
+    
 
     const logout = () => {
         setIsLoading(true);
@@ -102,11 +104,12 @@ const useFirebase  = () => {
     }
 
    
-  const  StoreUserInformation = ({ email, name}) => {
+  const  StoreUserInformation = ({ email, name, method}) => {
+    const user = {email, name}
     fetch('http://localhost:5000/signup/userInformation', {
       method: 'POST',
       headers: { "content-type": "application/json" },
-      body: JSON.stringify({name, email})
+      body: JSON.stringify(user)
     }).then(res => res.json())
       .then(data => console.log(data))
    }

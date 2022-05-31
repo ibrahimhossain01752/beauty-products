@@ -8,7 +8,7 @@ const Login = () => {
     const {user, loginUser, isLoading, signInWithGoogle, authError} = useAuth();
    
     const location = useLocation();
-    let navigate = useNavigate();
+    const navigate = useNavigate();
      const redirect = location.state?.from || "/home";
 
     const handleOnChange = e => {

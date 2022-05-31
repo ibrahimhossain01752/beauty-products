@@ -1,0 +1,27 @@
+.orders2{
+    display:inline;
+    padding:30px;
+    text-align:center;
+    align-items:center;
+    margin-top:-650px;
+    margin-left:350px;
+}
+.order-3{
+    display:inline;
+}
+.table{
+    margin-top:-200px;
+    margin-left:350px;
+    padding:20px;
+}
+.table1{
+    margin-top:-750px;
+    margin-left:350px;
+    /* display:inline; */
+}
+.status{
+    margin-left: -150px;
+}
+.delete-card{
+    margin-left:10px;
+}

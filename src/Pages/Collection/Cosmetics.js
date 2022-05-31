@@ -37,23 +37,3 @@ const Cosmetics = () => {
 
 export default Cosmetics;
 
-/* 
-
- <div class="container">
-        <div class="row row-cols-1 row-cols-md-4 g-4 ">
-          {newServices.map((pd,idx)=>(
-              <div class="col">
-              <div class="card h-100 ">
-               <div class="imgBx">
-               <img src={pd?.img} class="card-img-top " alt="..."/>
-               </div>
-                <div class="card-body contentBx ">
-                  <h5 class="card-title">{pd?.title}</h5>
-                  <p class="card-text">{pd?.price}</p>
-                  
-                </div>
-                
-              </div>
-            </div>
-
-*/
