@@ -1,4 +1,16 @@
 .btn11{
-    padding:10px;
+    padding:5px;
     width:60px;
+    background-color: rgb(233, 34, 34);
+    border: 2px solid rgb(233, 34, 34);
+}
+.headerst{
+    font-family: 'Bebas Neue', cursive;
+    color:rgb(233, 34, 34);
+}
+.bg{
+    background-color:white;
+}
+.nav-head{
+    font-weight: 700;
 }
