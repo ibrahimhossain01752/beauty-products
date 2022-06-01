@@ -16,7 +16,7 @@ https://cdn.shopify.com/s/files/1/0195/5145/3248/files/slider-1_2000x.jpg?v=1572
 " class="d-block w-100" alt="..."/>
             <div class="carousel-caption d-none d-md-block">
               <h5 class="para1">Best Offers On</h5>
-             <h1 class="beauti-title"><span class="colec2">Natural Cosmetics</span> <span class="colec">Collections</span></h1>
+             <h1 class="beauti-title"><span class="colec1">Natural Cosmetics</span> <span class="colec">Collections</span></h1>
              <h5 class="para2">flat 30% off</h5>
             
             </div>
@@ -28,9 +28,9 @@ https://cdn.shopify.com/s/files/1/0195/5145/3248/files/slider-1_2000x.jpg?v=1572
 https://cdn.shopify.com/s/files/1/0195/5145/3248/files/slider-2_bd13fd4a-b427-4949-8025-288b3a744835_2000x.jpg?v=1572581683" class="d-block w-100" alt="..."/>
            </div>
             <div class="carousel-caption item-2  d-none d-md-block">
-            <h5 class="para3"><span class="span1">Best Offers On</span></h5>
-             <h1 class="beauti-title para4"><span class="colec2">Natural Cosmetics</span> <span class="colec">Collections</span></h1>
-             <h5 class="para5">flat 30% off</h5>
+            <h5 class="para3"><span class="span2">Cosmetics For Young</span></h5>
+             <h1 class="beauti-title para4"><span class="colec2">Senstive Skin</span> <span class="colec"></span></h1>
+             <h5 class="para-two">50% Discount</h5>
               
              
             </div>
@@ -39,9 +39,9 @@ https://cdn.shopify.com/s/files/1/0195/5145/3248/files/slider-2_bd13fd4a-b427-49
             <img src="https://cdn.shopify.com/s/files/1/0195/5145/3248/files/slider-3-1_2000x.jpg?v=1572863329
 " class="d-block w-100" alt="..."/>
             <div class="carousel-caption d-none d-md-block">
-            <h5 class="para3"><span class="span1">Best Offers On</span></h5>
-             <h1 class="beauti-title para4"><span class="colec2">Natural Cosmetics</span> <span class="colec">Collections</span></h1>
-             <h5 class="para5">flat 30% off</h5>
+            <h5 class="para3"><span class="span3">Best Collections</span></h5>
+             <h1 class="beauti-title para4"><span class="colec3">MODERN AND</span> <span class="colec-three">TRENDY PRODUCTS</span></h1>
+             <h5 class="para5">flat 30% off on all items</h5>
             </div>
           </div>
         </div>

@@ -12,6 +12,21 @@
 }
 .colec2{
     display: block;
+    color: #f10a95;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+}
+.colec3{
+    display: block;
+    color: #d26f2c;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+}
+.colec-three{
+    display: block;
+    color: #d26f2c;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
 }
 
 .beauti-title{
@@ -29,6 +44,11 @@
     margin-right:287px;
     font-weight:50;
 }
+.para-two{
+    color: black;
+    margin-right:-585px;
+    font-weight:50;
+}
 .para3{
     color: black;
     margin-right:-396px;
@@ -41,7 +61,7 @@
 }
 .para5{
     color: black;
-    margin-right:-360px;
+    margin-right:-580px;
     font-weight:50;
 }
 /* .colec1{
@@ -82,4 +102,11 @@
 
 .span1{
     display:block;
+}
+.span3{
+    display:block;
+    margin-left:210px;
+}
+.span2{
+    margin-left:210px;
 }
