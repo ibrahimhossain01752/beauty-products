@@ -1,5 +1,8 @@
+.text-three{
+    color: palevioletred;
+}
 .slider-area{
-    background: #262626;
+    /* background: #262626; */
     padding: 50px 0;
     position: relative;
     margin:120px 0;
@@ -44,7 +47,8 @@ carousel-control-next{
     color:#fff;
 }
 .review-bg{
-    background-color: rgba(0, 0, 255, 0.431);
+    /* background-color: rgba(0, 0, 255, 0.431); */
+    background-color:bisque;
 }
 .comments-review{
     width: 100%;
@@ -57,11 +61,13 @@ carousel-control-next{
 }
 .review-slide{
     height:270px;
-    background-color: rgb(2, 2, 43);
+    /* background-color: rgb(2, 2, 43); */
+    background-color: rgba(128, 128, 128, 0.713);
 }
 .comments{
     color: azure;
 }
 .rating-color{
-    color:rgb(254, 12, 52);
+    /* color:rgb(254, 12, 52); */
+    color: rgba(255, 0, 0, 0.865);
 }

@@ -1,3 +1,12 @@
+.section-header{
+    margin-left: 60px;
+    font-family: 'Poppins', sans-serif;
+    font-weight:50;
+    color: palevioletred;
+}
+.latest{
+    margin-left: -60px;
+}
 .homecard{
     margin-top:100px;
 }
@@ -54,6 +63,7 @@
     top: 0%;
     right: 0;
 }
+
 /* .grid, .grid--rev, .grid--full, .grid-uniform {
     list-style: none;
     margin: 0;

@@ -12,8 +12,8 @@ const Cosmetics = () => {
     },[]);
     return (
         <div className="container">
-           <h2>Cosmetics Collections</h2>
-           <div className="row row-cols-1 row-cols-md-4 g-4">
+           <h2 class="tx-two">Cosmetics Collections</h2>
+           <div className="row row-cols-1 row-cols-md-4 g-4 mt-3">
                 {services.map((pd, idx) => (
                     <div class="col">
                     <div class="card h-100 ">

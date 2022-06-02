@@ -11,7 +11,7 @@ const AllReview = () => {
     },[reviews]);
     return (
         <div class="mt-5">
-             <h1 className="fs-1 text-warning">Customers Reviews  </h1>
+             <h1 className="fs-1 text-three">Customers Reviews  </h1>
              <div>
                  {reviews.map((pd,idx) => (
                      
@@ -23,7 +23,7 @@ const AllReview = () => {
     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
-  <div class="carousel-inner review-slide">
+  <div class="carousel-inner review-slide mt-3">
     {/* <div class="carousel-item active" data-bs-interval="10000">
       <img src="..." class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
