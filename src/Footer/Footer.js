@@ -7,15 +7,16 @@ const Footer = () => {
         <div className="banner-overlay">
         <div className="container ">
            <div class="row row-cols-1 row-cols-md-5 g-4 footer">
-  <div class="col">
+  <div class="col ">
     <div class=" h-100">
      
-      <div class="card-body">
-        <h5 class="card-title">CONTACT US</h5>
-        <p class="card-text33"><span className="span4">No: 58 A, East Madison</span><span class="card-33">Baltimore, MD,USA</span></p>
-<p><i class="fa-solid fa-phone phone78"></i>+91 12345678</p>
-<p><i class="fa-solid fa-envelope"></i>support@somemail.com</p>
-<p><i class="fa-solid fa-earth-africa"></i>sample@domain.com</p>
+      <div class="card-body ">
+        <h5 class="card-title text-start">CONTACT US</h5>
+        <p class="card-text33"><span className="span4 text-start">No: 58 A, East Madison</span><span class="card-33 text-start">Baltimore, MD,USA</span></p>
+<p class="text-start"><i class="bi bi-telephone-fill phone-cl"></i><span class="first-cl">+91 12345678</span></p>
+<p class="text-start"><i class="bi bi-envelope-open-fill main-email"></i>sample@domain.com</p>
+{/* <p class="first-email text-start"><i class="bi bi-envelope-open-fill main-email"></i>supp@email.com</p> */}
+<p class="text-start"><i class="bi bi-inbox"></i>sample@domain.com</p>
       </div>
       
     </div>
@@ -23,13 +24,13 @@ const Footer = () => {
   <div class="col">
     <div class=" h-100">
     
-      <div class="card-body">
+      <div class="card-body ">
         <h5 class="card-title">HELP</h5>
-       <p>Search</p>
-       <p>Help</p>
-       <p>Information</p>
-       <p>Privacy Policy</p>
-       <p>Shipping Details</p>
+       <p class="text-center one">Search</p>
+       <p class="text-hlp">Help</p>
+       <p class="text-inform">Information</p>
+       <p class="text-policy">Privacy Policy</p>
+       <p class="text-details">Shipping Details</p>
       </div>
       
     </div>
@@ -37,13 +38,13 @@ const Footer = () => {
   <div class="col">
     <div class=" h-100">
     
-      <div class="card-body">
+      <div class="card-body ">
         <h5 class="card-title">SUPPORT</h5>
-        <p>Contact us</p>
-        <p>About us</p>
-        <p>Careers</p>
-        <p>Refunds & Returns</p>
-        <p>Deliveries</p>
+        <p class="text-us">Contact us</p>
+        <p class="text-about">About us</p>
+        <p class="text-car">Careers</p>
+        <p class="text-refunds">Refunds & Returns</p>
+        <p class="text-deliver">Deliveries</p>
       </div>
       
     </div>
@@ -53,11 +54,11 @@ const Footer = () => {
       
       <div class="card-body">
         <h5 class="card-title">INFORMATION</h5>
-      <p>Search Terms</p>
-      <p>Advanced Search</p>
-      <p>Help & Faq's</p>
-      <p>Store Location</p>
-      <p>Orders & Returns</p>
+      <p  class="text-seracrch">Search Terms</p>
+      <p class="text-advan">Advanced Search</p>
+      <p class="text-help">Help & Faq's</p>
+      <p class="text-store">Store Location</p>
+      <p class="text-order">Orders & Returns</p>
       </div>
      
     </div>
@@ -67,7 +68,7 @@ const Footer = () => {
  
       <div class="card-body">
         <h5 class="card-title">INSTAGRAM FEED</h5>
-      <p>Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.</p>
+      <p class="text-error">Error validating access token: The session has <span class="text-indivi">been invalidated</span> <span class="text-usert">because the user</span>  password or Facebook <span class="changes">has changed</span> <span class="session"> session for security </span>  <span class="reason">reasons.</span></p>
       
       </div>
      
@@ -75,87 +76,15 @@ const Footer = () => {
   </div>
 </div> 
         </div>
-        </div>
-    </div>
+        </div> 
+    </div> 
+
+
+    
+   
     );
 };
 
 export default Footer;
 
 
-/* 
-
-   <div className="container ">
-           <div class="row row-cols-1 row-cols-md-5 g-4 footer">
-  <div class="col">
-    <div class=" h-100">
-     
-      <div class="card-body">
-        <h4 class="card-title">CONTACT US</h4>
-        <p class="card-text">No: 58 A, East Madison Street,
-<span class="card-33">Baltimore, MD,USA 4508</span></p>
-<p><i class="fa-solid fa-phone"></i>+91 12345678</p>
-<p><i class="fa-solid fa-envelope"></i>support@somemail.com</p>
-<p><i class="fa-solid fa-earth-africa"></i>sample@domain.com</p>
-      </div>
-      
-    </div>
-  </div>
-  <div class="col">
-    <div class=" h-100">
-    
-      <div class="card-body">
-        <h4 class="card-title">HELP</h4>
-       <p>Search</p>
-       <p>Help</p>
-       <p>Information</p>
-       <p>Privacy Policy</p>
-       <p>Shipping Details</p>
-      </div>
-      
-    </div>
-  </div>
-  <div class="col">
-    <div class=" h-100">
-    
-      <div class="card-body">
-        <h4 class="card-title">SUPPORT</h4>
-        <p>Contact us</p>
-        <p>About us</p>
-        <p>Careers</p>
-        <p>Refunds & Returns</p>
-        <p>Deliveries</p>
-      </div>
-      
-    </div>
-  </div>
-  <div class="col">
-    <div class=" h-100">
-      
-      <div class="card-body">
-        <h4 class="card-title">INFORMATION</h4>
-      <p>Search Terms</p>
-      <p>Advanced Search</p>
-      <p>Help & Faq's</p>
-      <p>Store Location</p>
-      <p>Orders & Returns</p>
-      </div>
-     
-    </div>
-  </div>
-  <div class="col">
-    <div class=" h-100">
- 
-      <div class="card-body">
-        <h4 class="card-title">INSTAGRAM FEED</h4>
-      <p>Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.</p>
-      
-      </div>
-     
-    </div>
-  </div>
-</div> 
-        </div>
-
-
-*/

@@ -5,7 +5,7 @@
 
 .card-33{
     display:block;
-    margin-left: 14px;
+    margin-left: px;
 }
 
 .footer{
@@ -27,6 +27,111 @@
 .phone78{
     color:rgb(224, 10, 10);
 }
-/* .card-text33{
-    
-} */
+.text-hlp{
+    margin-right: 15px;
+}
+.text-inform{
+    margin-left: 30px;
+}
+.text-policy{
+    margin-left:37px;
+}
+.text-details{
+    margin-left:54px;
+}
+.text-us{
+    margin-right: 12px;
+}
+.text-us:hover{
+    color:rgb(243, 31, 66);
+}
+.text-about{
+    margin-right:21px;
+}
+.text-about:hover{
+    color:rgb(243, 31, 66);
+}
+.text-car{
+    margin-right:37px;
+}
+.text-car:hover{
+    color:rgb(243, 31, 66);
+}
+.text-refunds{
+    margin-left: 40px;
+}
+.text-refunds:hover{
+    color:rgb(243, 31, 66);
+}
+.text-deliver{
+    margin-right:25px;
+}
+.text-deliver:hover{
+    color:rgb(243, 31, 66);
+}
+.text-seracrch{
+    margin-right:45px;
+}
+.text-seracrch:hover{
+    color:rgb(243, 31, 66);
+}
+.text-advan{
+    margin-right:20px;
+}
+.text-advan:hover{
+    color:rgb(243, 31, 66);
+}
+.text-help{
+    margin-right:50px;
+}
+.text-help:hover{
+    color:rgb(243, 31, 66);
+}
+.text-store{
+    margin-right:40px;
+}
+.text-store:hover{
+    color:rgb(243, 31, 66);
+}
+.text-order{
+    margin-right:20px;
+}
+.text-order:hover{
+    color:rgb(243, 31, 66);
+}
+.text-error{
+    margin-right:10px;
+}
+
+.text-indivi{
+    margin-right:40px;
+}
+.text-usert{
+    margin-right:40px;
+}
+.changes{
+    margin-right:-30px;
+}
+.changes{
+    margin-right:67px;
+}
+
+.session{
+    margin-right:20px;
+}
+
+.reason{
+    margin-right:95px;
+}
+.one:hover{
+    color:rgb(243, 31, 66);
+}
+.text-inform:hover{
+    color:rgb(243, 31, 66);
+}
+.text-policy:hover{
+    color:rgb(243, 31, 66);
+}
+.text-details:hover{
+    color:rgb(243, 31, 66);
+}
