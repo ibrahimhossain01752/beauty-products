@@ -135,3 +135,63 @@
 .text-details:hover{
     color:rgb(243, 31, 66);
 }
+.bg-two{
+    background-color: #ef2853;
+    padding:15px;
+}
+.credit-icon{
+    font-size: 29px;
+    text-align: left;
+    margin-left:120px;
+    
+}
+.first-one{
+    color: rgb(3, 3, 45);
+}
+.first-second{
+    color: rgba(255, 255, 0, 0.561);
+}
+.first-thierd{
+    color:rgba(102, 51, 153, 0.632);
+}
+.twt{
+    margin-left:820px;
+    font-size: 17px;
+    border:1px solid white;
+    padding:4px;
+    color:white;
+}
+.twt:hover{
+    background-color:rgb(255, 255, 255);
+    color:black;
+}
+.fac{
+    font-size: 17px;
+    border:1px solid white;
+    padding:4px;
+    color:white;
+}
+.fac:hover{
+    background-color:rgb(255, 255, 255);
+    color:black;
+}
+.gol{
+    font-size: 17px;
+    border:1px solid white;
+    padding:4px;
+    color:white;
+}
+.gol:hover{
+    background-color:rgb(255, 255, 255);
+    color:black;
+}
+.tel{
+    font-size: 17px;
+    border:1px solid white;
+    padding:4px;
+    color:white;
+}
+.tel:hover{
+    background-color:rgb(255, 255, 255);
+    color:black;
+}

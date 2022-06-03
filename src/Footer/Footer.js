@@ -74,10 +74,24 @@ const Footer = () => {
      
     </div>
   </div>
+  
 </div> 
         </div>
         </div> 
+        <div class="bg-two">
+        <div class="credit-icon g-4">
+        <i class="bi bi-credit-card first-one m-2"></i>
+        <i class="bi bi-credit-card-2-back-fill m-2 first-second"></i>
+        <i class="bi bi-credit-card-2-front-fill m-2 first-thierd"></i>
+        <i class="bi bi-twitter twt"></i>
+        <i class="bi bi-facebook fac"></i>
+        <i class="bi bi-google gol"></i>
+        <i class="bi bi-telegram tel"></i>
+        </div>
+        
+  </div>
     </div> 
+    
 
 
     
