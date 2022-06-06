@@ -56,18 +56,18 @@ const Register = () => {
 
             
               <div class="d-grid">
-                <button class="btn btn-primary btn-login text-uppercase fw-bold" type="submit">Sign
-                  in</button>
+                <button class="btn btn-primary btn-login text-uppercase fw-bold signIn" type="submit">Registerd</button>
               </div>
-              <hr class="my-4"/>
+              {/* <hr class="my-4"/> */}
+              <hr/>
               <div class="d-grid mb-2">
-                <button class="btn btn-google btn-login text-uppercase fw-bold" type="submit">
-                  <i class="fab fa-google me-2"></i> Sign in with Google
+                <button class="btn btn-google btn-login text-uppercase fw-bold google-btn" type="submit">
+                  <i class="fab fa-google "></i> Sign in with Google
                 </button>
               </div>
               <div class="d-grid">
-                <Link to="/login">
-                <button class="btn btn-facebook btn-login text-uppercase fw-bold txt1" type="submit">
+                <Link  class="reg-one" to="/login">
+                <button class="btn btn-facebook btn-login text-uppercase fw-bold txt1 google-btn" type="submit">
                   Already Registerd? Please Login
                 </button>
                 </Link>
@@ -81,9 +81,9 @@ const Register = () => {
         {user?.email && <div class="alert alert-success success-alert" role="alert">
         User created successfully.!
         </div>}
-        {authError && <div class="alert alert-danger" role="alert">
+       {/*  {authError && <div class="alert alert-danger" role="alert">
   {authError}
-</div>}
+</div>} */}
           </div>
         </div>
       </div>

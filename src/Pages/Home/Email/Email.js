@@ -48,7 +48,7 @@ const Email = () => {
             </div>
             <div className="col-md-6">
             {/* <StyledContactForm> */}
-      <form ref={form} onSubmit={sendEmail}>
+      <form  ref={form} onSubmit={sendEmail}>
         <label>Name</label>
         <input type="text" name="user_name" />
         <label>Email</label>

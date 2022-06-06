@@ -41,7 +41,7 @@ const Login = () => {
             <form onSubmit={handleSigninSubmit}>
               <div class="form-floating mb-3">
                 <input type="email" onChange={handleOnChange} class="form-control" id="floatingInput" placeholder="name@example.com"/>
-                <label for="floatingInput">Email address</label>
+                <label class="label-two" for="floatingInput">Email address</label>
               </div>
               <div class="form-floating mb-3">
                 <input type="password" onChange={handleOnChange} class="form-control" id="floatingPassword" placeholder="Password"/>
@@ -54,9 +54,9 @@ const Login = () => {
                   Remember password
                 </label>
               </div> */}
-              <div class="d-grid">
-                <button class="btn btn-primary btn-login text-uppercase fw-bold" type="submit">Sign
-                  in</button>
+              <div class="d-grid ">
+                <button class="btn btn-primary btn-login text-uppercase fw-bold signIn text-center"  type="submit"><span class="text-centerr">Sign
+                  in</span></button>
               </div>
               </form>
               <hr class="my-4"/>
@@ -66,8 +66,8 @@ const Login = () => {
                 </button>
               </div>
               <div class="d-grid">
-               <Link to ="/register">
-               <button  class="btn btn-facebook btn-login text-uppercase fw-bold txt1" type="submit">
+               <Link class="reg-one" to ="/register">
+               <button  class="btn btn-facebook btn-login text-uppercase fw-bold txt1 reg-one" type="submit">
                    New User? Please Register
                 </button>
                </Link>

@@ -25,3 +25,19 @@
   .txt1{
     text-decoration: none;
   }
+  .form-control{
+    width: 350px;
+   padding: 10px;
+  }
+  .signIn{
+   /* padding-left: 270px; */
+   width: 340px;
+   margin-left:5px;
+  }
+  .reg-one{
+    text-decoration: none;
+  }
+  
+  /* .label-two{
+    width: 100%;
+  } */
