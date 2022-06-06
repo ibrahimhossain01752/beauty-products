@@ -13,12 +13,12 @@ const Products = () => {
     const newServices = services.slice(0,8);
 
     return (
-        <div class="container">
+         <div class="container">
           <div class="row row-cols-1 row-cols-md-4 g-4 ">
             {newServices.map((pd,idx)=>(
                 <div class="col">
-                <div class="card h-100 ">
-                 <div class="imgBx images55">
+                <div class="card card-onn h-100 ">
+                 <div class="imgBx images55 card-onn">
                  <img src={pd?.img} class="card-img-top " alt="..."/>
                  </div>
                   <div class="card-body contentBx ">
@@ -35,8 +35,60 @@ const Products = () => {
  
   
 </div>
-    </div>
+    </div> 
+ 
+
+
+        
+
     );
 };
 
 export default Products;
+
+
+
+
+
+
+
+
+
+
+
+// ==========================================
+
+/* 
+
+<div class="container productsCard">
+            {newServices.map((pd,idx)=> (
+              <div class="card">
+              <div class="imgBx">
+              <img src={pd?.img} class="card-img-top images-thee" alt="..."/>
+              </div>
+              <div class="contentBx">
+              <h5 class="card-title">{pd?.title}</h5>
+                <div class="size">
+                  <h3>Size :</h3>
+                  <span>7</span>
+                  <span>8</span>
+                  <span>9</span>
+                  <span>10</span>
+                </div>
+                <div class="color">
+                  <h3>Color :</h3>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <Link to={`/Collection/${pd._id}`}>{" "}
+                   <button class="btn23">Shop Now</button>
+                   </Link>
+              </div>
+            </div>
+            ))}
+        </div>
+
+
+
+*/
