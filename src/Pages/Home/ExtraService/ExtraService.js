@@ -6,9 +6,9 @@ const ExtraService = () => {
     return (
         <div className="banner-main2 mt-5">
             <div className="banner-overlay">
-                <div className="container col-md-12 col-sm-6">
+                <div className="container col-md-12 col-sm-6" data-aos="fade-left">
                     <div className="row">
-                        <div className="col-lg-6">
+                        <div className="col-lg-6"  >
                            <div className="banner-content text-center text-md-start banner3 ">
                                 <h4 className="banner-title22">Awesome Shop From</h4>
                                 <h2 className="heading2">Total Cosmetic Store</h2>
