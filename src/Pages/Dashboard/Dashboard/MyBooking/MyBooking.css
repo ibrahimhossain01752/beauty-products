@@ -12,16 +12,19 @@
 .table{
     margin-top:-200px;
     margin-left:350px;
-    padding:20px;
+    /* padding:20px; */
 }
 .table1{
-    margin-top:-750px;
-    margin-left:350px;
-    /* display:inline; */
+    margin-top:-300px;
+    width: 100%;
+    margin-left:550px;
+    
 }
-.status{
+/* .status{
     margin-left: -150px;
-}
-.delete-card{
-    margin-left:10px;
-}
+} */
+
+
+/* .all-order{
+
+} */

@@ -39,14 +39,14 @@ const MyBooking = () => {
     return (
 
         
-        <div className="container ">
-           <div class="orders2 mx-auto">
+        <div className="container banner-overlayy ">
+           <div class="orders2 mx-auto ">
            
            <h2 class="table1">All Orders{orders.length}</h2>
-           {/* <h2>My BookingList</h2> */}
+          
           
            </div>
-            <table class="table table table-success table-striped">
+            <table class="table table-dark table-hover">
   <thead class="">
   
     <tr>
@@ -68,9 +68,10 @@ const MyBooking = () => {
         <td>{pd?.displayName}</td>
         <td>{pd?.phone}</td>
         <td>{pd?.email}</td>
-        <td>{pd?.key}</td>
         <td class="status">{pd?.status}</td>
         <button onClick={()=> Delete(pd?._id)} class="btn bg-danger delete-card">Delete</button>
+        <td>{pd?.key}</td>
+        
       </tr>
       
       

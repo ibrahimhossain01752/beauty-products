@@ -45,25 +45,28 @@ const Review = () => {
                   className="p-2 m-2 name-one  input-field"
                 />
 
-                <textarea
-                  {...register("Comments", { required: true })}
-                  placeholder="Comments"
-                  className="p-2 m-2 name-one input-field"
+               <textarea
+                {...register("Comments", { required: true })}
+                placeholder="Comments"
+                className="p-2 m-2  input-field textarea-two"
+              
                 />
-
-                <input
+                 
+                 
+              <input
                   {...register("rating", { required: true })}
                   min="1" max="5"
                   placeholder="Rating"
                   type="number"
-                  className=" input-field name-one"
+                  className=" input-field name-one names-three"
                 />
 
                 <input
                   type="submit"
                   value="Review Us"
-                  className="btn btn-info name-one "
+                  className=" btn-three name-one "
                 />
+               
               </form>
             </div>
           </div>

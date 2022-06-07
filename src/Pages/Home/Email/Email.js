@@ -54,7 +54,7 @@ const Email = () => {
         <label>Email</label>
         <input type="email" name="user_email" />
         <label>Message</label>
-        <textarea name="message" />
+        <textarea className="text-rr" name="message" />
         <input type="submit" value="Send" />
       </form>
     {/* </StyledContactForm> */}

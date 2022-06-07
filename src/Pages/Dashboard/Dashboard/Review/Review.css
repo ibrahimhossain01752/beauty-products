@@ -3,5 +3,33 @@
     margin-left:350px;
 }
 .name-one{
-    width: 350px;
+    width:300px; 
+    border-radius: 5px;
+    border: 1px solid rgb(220, 220, 220);
 }
+.name-one:focus{
+    border: 2px solid rgba(0, 206, 158, 1);
+}
+.textarea-two{
+    width:300px; 
+    border-radius:5px ;
+    border: 1px solid rgb(220, 220, 220);
+}
+.textarea-two:focus{
+    border: 2px solid rgba(0, 206, 158, 1);
+}
+.names-three{
+    margin-left:8px;
+}
+.btn-three{
+    margin:10px;
+    /* margin-top: -10px; */
+}
+/* .btn-three{
+    width:600px;
+    padding-left: -350px;
+    margin: 10px;
+} */
+/* .textare-two{
+    padding: 350px;
+} */

@@ -48,7 +48,7 @@ const Dashboard = () => {
                         <li class="dashboard-menu mt-5 text-decoration-none pay"><i class="bi bi-credit-card-2-front-fill das-1"></i>Payments</li>
                         </Link>
                         <Link class="abul lotif mb-5 " to="/dashboard/review">
-                        <li class="dashboard-menu mt-5 text-decoration-none review"><i class="bi bi-award-fill das-2"></i>Review</li>
+                        <li class="dashboard-menu mt-5 text-decoration-none review"><i class="bi bi-award-fill das-2 g-2"></i>Review</li>
                         </Link>
                         
                        </div>
