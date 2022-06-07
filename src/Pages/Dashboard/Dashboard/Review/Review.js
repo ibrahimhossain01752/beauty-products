@@ -25,12 +25,12 @@ const Review = () => {
       };
     return (
         <div>
-      <div>
-        <h1 className="mt-5 text-center text-danger">Please Give us honest Reviews</h1>
+      <div className="mt-5">
+        {/* <h1 className="mt-5 text-center text-danger reviewss">Please Give us honest Reviews</h1> */}
         <div className=" w-25 m-auto mt-5">
           <div className=" ">
             <div className="review-section">
-              <form onSubmit={handleSubmit(onSubmit)}>
+              <form className="from-two" onSubmit={handleSubmit(onSubmit)}>
                 <input
                   {...register("name")}
                   placeholder="Name"

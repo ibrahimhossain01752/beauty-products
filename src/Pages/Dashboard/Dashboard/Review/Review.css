@@ -1,6 +1,7 @@
 .review-section{
-    margin-top:-450px;
-    margin-left:350px;
+    margin-top:-250px;
+    margin-left:400px;
+    
 }
 .name-one{
     width:300px; 
@@ -25,11 +26,6 @@
     margin:10px;
     /* margin-top: -10px; */
 }
-/* .btn-three{
-    width:600px;
-    padding-left: -350px;
-    margin: 10px;
-} */
-/* .textare-two{
-    padding: 350px;
-} */
+.from-two{
+    background: black;
+}
