@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate, useParams } from "react-router";
 import useFirebase from "../../../hooks/useFirebase";
+import './PlaceOrder.css';
 //import useFirebase from "../../../hooks/useFirebase";
 
 
@@ -31,6 +32,7 @@ const PlaceOrder = () => {
     // data.key = orders.key;
     // data.price = orders.price;
     data.email = user?.email;
+            
             data.status = 'pending';
              data.img = orders.img;
              data.key = orders.key;
@@ -69,7 +71,7 @@ const PlaceOrder = () => {
              </div>
        <div className="col-md-6 col-sm-12">
        <div>
-        <h1 className="mt-5 text-center text-success"> Customer Infotmation </h1>
+        <h1 className="mt-5 text-center text-cc"> Customer Infotmation </h1>
         <div className=" w-75 m-auto mt-5">
           <div className=" ">
             <div className="">

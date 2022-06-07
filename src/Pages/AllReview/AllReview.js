@@ -43,7 +43,7 @@ const AllReview = () => {
       <div class="carousel-captioned d-none d-md-block">
         <h3 class="text-name mt-2">{pd?.name}</h3>
         <p class="comments">{pd?.Comments}</p>
-        <i value={pd?.rating} class="fa fa-star rating-color"></i>
+        <i value={pd?.rating} class="fa fa-star rating-color mt-1 mb-3"></i>
       </div>
     </div>
   </div>

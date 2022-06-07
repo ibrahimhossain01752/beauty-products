@@ -7,7 +7,10 @@ import HomeCard2 from '../HomeCard2/HomeCard2';
 import Products from '../Products/Products';
 import StyleCard from '../StyleCard/StyleCard';
 
+
+
 const Home = () => {
+   
     return (
         <div>
            <Banner></Banner>
