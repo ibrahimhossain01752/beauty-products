@@ -1,7 +1,17 @@
-.home-nav{
+/* .home-nav{
     width: 124px;
     height:68px;
 }
 .home-hr{
     width: 100%;
-}
+} */
+
+@media only screen and (max-width:576px) {
+    /* For mobile phones: */
+    .home-hr {
+      width: 100%;
+    }
+    .home-nav{
+        width:50%;
+    }
+  }

@@ -1,4 +1,5 @@
 import React from 'react';
+import './HomeNav.css';
 
 const HomeNav = () => {
     return (
