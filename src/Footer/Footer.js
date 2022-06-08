@@ -6,7 +6,9 @@ const Footer = () => {
         <div className="banner-main34 mt-5">
         <div className="banner-overlay">
         <div className="container ">
-           <div class="row row-cols-1 row-cols-md-5 g-4 footer">
+           <div class="row row-cols-1 row-cols-md-5 g-4 footer" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
   <div class="col ">
     <div class=" h-100">
      
