@@ -8,7 +8,7 @@ const ExtraService = () => {
             <div className="banner-overlay">
                 <div className="container col-md-12 col-sm-6" data-aos="fade-left">
                     <div className="row">
-                        <div className="col-lg-6"  >
+                        <div className="col-lg-6 awesome"  >
                            <div className="banner-content text-center text-md-start banner3 ">
                                 <h4 className="banner-title22">Awesome Shop From</h4>
                                 <h2 className="heading2">Total Cosmetic Store</h2>
@@ -20,8 +20,8 @@ const ExtraService = () => {
                            </div>
 
                         </div>
-                        <div className="col-lg-6">
-                            <div className="banner-content text-center text-md-start banner2">
+                        <div className="col-lg-6 awesome-images">
+                            <div className="banner-content text-center text-md-start ">
                             <img src={girl} className="banner2" alt="..."/>
                             </div>
                         </div>

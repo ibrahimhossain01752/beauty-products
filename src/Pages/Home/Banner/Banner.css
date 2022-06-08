@@ -110,3 +110,10 @@
 .span2{
     margin-left:210px;
 }
+
+@media only screen and (max-width:576px) {
+    /* For mobile phones: */
+    .para1, .beauti-title, .para2 {
+     font-size:20px;
+    }
+  }
