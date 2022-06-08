@@ -81,7 +81,8 @@ export default class MultipleItems extends Component {
       slidesToScroll: 1
     };
     return (
-      <div class="container g-4">
+      <div class="container g-4" data-aos="fade-up"
+      data-aos-duration="3000">
         <div class="latest">
         <h2 class="section-header mt-5"> Latest Post </h2>
         </div>

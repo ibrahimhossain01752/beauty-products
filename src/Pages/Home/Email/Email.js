@@ -35,7 +35,8 @@ const Email = () => {
           
         <div className='banner-main3 text-white mt-5'>
     <div className="banner-overlay">
-    <div className="container col-md-12 col-sm-6 ">
+    <div className="container col-md-12 col-sm-6 " data-aos="fade-right"
+     data-aos-duration="3000">
         <div className="row emil">
         {/* <Fade left> */}
             <div className="col-md-6">
