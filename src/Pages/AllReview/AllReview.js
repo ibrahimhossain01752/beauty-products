@@ -38,12 +38,14 @@ const AllReview = () => {
         <p>Some representative placeholder content for the second slide.</p>
       </div>
     </div> */}
-    <div class="carousel-item active">
+    <div class="carousel-item active" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
       <img src={pd?.img} class="d-block images-review mt-3  image-area" alt="..."/>
       <div class="carousel-captioned d-none d-md-block">
         <h3 class="text-name mt-2">{pd?.name}</h3>
         <p class="comments">{pd?.Comments}</p>
-        <i value={pd?.rating} class="fa fa-star rating-color mt-1 mb-3"></i>
+        <i value={pd?.rating} class="fa fa-star rating-color mt-1"></i>
       </div>
     </div>
   </div>
