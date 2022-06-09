@@ -81,16 +81,16 @@ export default class MultipleItems extends Component {
       slidesToScroll: 1
     };
     return (
-      <div class="container g-4" data-aos="fade-up"
+      <div class="container home-card g-4" data-aos="fade-up"
       data-aos-duration="3000">
         <div class="latest">
         <h2 class="section-header mt-5"> Latest Post </h2>
         </div>
         <Slider {...settings}>
         
-          <div class="" >
+          <div class="row " >
          
-          <div class="col mt-3">
+          <div class=" col-sm-12 mt-3">
     <div class="card ">
       <img src="https://cdn.shopify.com/s/files/1/0195/5145/3248/articles/11_grande.jpg?v=1548071782" class="card-img-top" alt="..."/>
        <div className="since">
@@ -106,7 +106,7 @@ export default class MultipleItems extends Component {
   </div>
           </div>
           <div>
-          <div class="col mt-3">
+          <div class=" col-sm-12 mt-3">
     <div class="card ">
       <img src="https://cdn.shopify.com/s/files/1/0195/5145/3248/articles/10_grande.jpg?v=1548071708" class="card-img-top" alt="..."/>
        <div className="since">
