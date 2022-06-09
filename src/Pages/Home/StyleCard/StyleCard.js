@@ -5,9 +5,7 @@ const StyleCard = () => {
     return (
 
         <div class="container ">
-            <div class="row row-cols-1 row-cols-md-3 col-sm-12 g-4 mb-5 style" data-aos="fade-right"
-     data-aos-offset="300"
-     data-aos-easing="ease-in-sine">
+            <div class="row row-cols-1 row-cols-md-3 col-sm-12 g-4 mb-5  style" >
   <div class="col profile-card">
     <div class="card h-100 profile-img">
       <img src="https://cdn.shopify.com/s/files/1/0195/5145/3248/files/img-1_96194762-8b36-421f-bf3d-4813c897a544.jpg?v=1572503767"  alt="..."/>

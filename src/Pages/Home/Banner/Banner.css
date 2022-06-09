@@ -64,9 +64,7 @@
     margin-right:-580px;
     font-weight:50;
 }
-/* .colec1{
-    margin-right:-5px;
-} */
+
 
 
 .btn btn-1{
@@ -75,7 +73,7 @@
 .carousel-item::before{
     content: "";
     display: block;
-    /* position: absolute; */
+    
     top: 0;
     left: 0;
     bottom: 0;
@@ -86,14 +84,10 @@
 
 .carousel-caption{
     bottom:300px;
-    /* padding-: 100px; */
+  
     padding-right: 550px;
 }
-/* .item-2{
-    bottom:130px;
-  
-    padding-left: 370px;
-} */
+
 
 .style-image{
    margin-bottom: 280px;
@@ -112,8 +106,14 @@
 }
 
 @media only screen and (max-width:576px) {
-    /* For mobile phones: */
+   
     .para1, .beauti-title, .para2 {
      font-size:20px;
+     margin-left: 90px;
+     
+    }
+    .carousel-caption{
+        margin-left:90px;
+        
     }
   }

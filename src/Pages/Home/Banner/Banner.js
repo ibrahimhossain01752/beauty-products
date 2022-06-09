@@ -63,6 +63,8 @@ https://cdn.shopify.com/s/files/1/0195/5145/3248/files/slider-2_bd13fd4a-b427-49
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+
+     
     );
 };
 
@@ -76,6 +78,4 @@ export default Banner;
                 <button class="btn btn-1">View More</button>
               </div>
             </div>
-
-
 */

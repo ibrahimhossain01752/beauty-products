@@ -78,8 +78,20 @@ export default class MultipleItems extends Component {
       infinite: true,
       speed: 500,
       slidesToShow: 2,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 576,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        },
+      ]
     };
+    
     return (
       <div class="container home-card g-4" data-aos="fade-up"
       data-aos-duration="3000">
@@ -88,9 +100,9 @@ export default class MultipleItems extends Component {
         </div>
         <Slider {...settings}>
         
-          <div class="row " >
+          <div class="extra-card" >
          
-          <div class=" col-sm-12 mt-3">
+          <div class="mt-3">
     <div class="card ">
       <img src="https://cdn.shopify.com/s/files/1/0195/5145/3248/articles/11_grande.jpg?v=1548071782" class="card-img-top" alt="..."/>
        <div className="since">
@@ -106,7 +118,7 @@ export default class MultipleItems extends Component {
   </div>
           </div>
           <div>
-          <div class=" col-sm-12 mt-3">
+          <div class="  mt-3">
     <div class="card ">
       <img src="https://cdn.shopify.com/s/files/1/0195/5145/3248/articles/10_grande.jpg?v=1548071708" class="card-img-top" alt="..."/>
        <div className="since">

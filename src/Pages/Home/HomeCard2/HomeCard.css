@@ -67,7 +67,9 @@
 @media only screen and (max-width:576px) {
     /* For mobile phones: */
     .nails {
-      display: inline;
+      display: inline-block;
+      font-size:11px;
+      margin-left:17px;
       
     }
     .home-card{
@@ -76,6 +78,18 @@
     .card-img-top{
         width: 100%;
         height: 100%;
+        
+        /* overflow: hidden; */
+        /* margin-left: 30px; */
+    }
+    .since{
+        margin-top: -192px;
+    }
+    .extra-card{
+        grid-template-columns:max-content(1);
+    }
+    .card-body1{
+        margin-top:140px;
     }
    
   }
