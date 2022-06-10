@@ -20,6 +20,20 @@
     margin-left:550px;
     
 }
+@media only screen and (max-width: 576px) {
+    /* .banner-overlayy {
+      width:20%;
+      margin-right:160px;
+    } */
+    .table{
+        margin-top: -330px;
+        position: relative;
+        /* margin-left: -850px; */
+    }
+    .table-one{
+        margin-right:260px ;
+    }
+  }
 /* .status{
     margin-left: -150px;
 } */

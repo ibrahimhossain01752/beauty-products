@@ -92,3 +92,24 @@
     padding:5px;
     /* margin-top: -20px; */
 }
+@media only screen and (max-width: 576px) {
+    .card-inform {
+      margin-top:40px;
+      margin-left: 20px;
+    }
+    .para10{
+        margin-left:20px;
+    }
+    .card-images{
+        width:50%;
+        height:50%;
+    }
+    .since1{
+        margin-bottom: 20px;
+    }
+    
+    .science{
+        margin-top: -205px;
+    }
+
+  }

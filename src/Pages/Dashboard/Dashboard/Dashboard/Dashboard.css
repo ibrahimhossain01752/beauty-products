@@ -175,7 +175,7 @@
    margin-left: 400px;
  } */
 
- @media (max-width: 991px) {
+ /* @media (max-width: 991px) {
   main-dashboard {
       right: -600px;
   }
@@ -190,4 +190,18 @@
     dashboard {
       width: 100%;
     }
-  } 
+  }  */
+
+  @media only screen and (max-width: 576px) {
+    .dashboard-link {
+      width:100px;
+    }
+    .main-dashboard{
+      width:30%;
+    }
+    .outlet1{
+      width:70%;
+      
+    }
+
+  }

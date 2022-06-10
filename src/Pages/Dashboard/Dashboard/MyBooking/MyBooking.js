@@ -47,7 +47,7 @@ const MyBooking = () => {
           
            </div>
             <table class="table table-dark table-hover">
-  <thead class="">
+  <thead class="table-one">
   
     <tr>
       <th scope="col">#</th>

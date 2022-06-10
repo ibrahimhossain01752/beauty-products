@@ -4,7 +4,8 @@ import './Blog.css';
 const Blog = () => {
     return (
         <div className="container homecard">
-        <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="row row-cols-1 row-cols-md-2 g-4" data-aos="fade-up"
+     data-aos-duration="3000">
         <div class="col-md-2">
 <div class=" ">
   {/* <img src="https://cdn.shopify.com/s/files/1/0195/5145/3248/articles/11_grande.jpg?v=1548071782" class="card-img-top" alt="..."/> */}
@@ -19,7 +20,7 @@ const Blog = () => {
    ----------------------
    <br/>
         <div class="col-md-1">
-            <img class="card-images" src="https://cdn.shopify.com/s/files/1/0195/5145/3248/articles/11.jpg?v=1548071782" alt=""/>
+            <img class="card-images" src="https://cdn.shopify.com/s/files/1/0195/5145/3248/articles/10.jpg?v=1548071708" alt=""/>
             <div class="col-md-1">
             <h6 className="card-inform"><span class="span7">Nailingit withpink requires attitude!</span></h6>
             <p className="para10">Loremipsum dolorsit, adipiscin gelit, seddo withpink...</p>
@@ -34,14 +35,14 @@ const Blog = () => {
 <div class="col-md-5">
 <div class="card ">
   <img src="https://cdn.shopify.com/s/files/1/0195/5145/3248/articles/11_grande.jpg?v=1548071782" class="card-img-top " alt="..."/>
-   <div className="since1">
+   <div className="since1 science">
    <h6>13</h6>
     <hr className="horizontal"/>
     <h6>March 2022</h6>
    </div>
   <div class="header-section1">
     <h5 class="header2 mb-5"><span class="span6">Nailing it</span> with pink requires attitudes!</h5>
-    <p class=" header-para1"> <span class="span1">Lorem ipsum dolor sit amet, consectetur</span> <span class="span2">adipiscing elit, sed do eiusmod tempor</span> <span class="span3">incididunt ut labore et dolore magna</span> <span  class="span4">aliqua. Ut enim ad minim </span>  </p>
+    <p class=" header-para1"> Lorem ipsum dolor sit amet, consecteturadipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna  aliqua. Ut enim ad minim   </p>
     <button class="button1 mt-3 mb-3">Read More </button>
   </div>
 </div>
@@ -49,14 +50,14 @@ const Blog = () => {
 <div class="col-md-5">
 <div class="card ">
   <img src="https://cdn.shopify.com/s/files/1/0195/5145/3248/articles/10.jpg?v=1548071708" class="card-img-top " alt="..."/>
-   <div className="since1">
+   <div className="since1 science">
    <h6>13</h6>
     <hr className="horizontal"/>
     <h6>March 2022</h6>
    </div>
   <div class="header-section1">
     <h5 class="header2 mb-5"><span class="span6">Nailing it</span> with pink requires attitudes!</h5>
-    <p class=" header-para1"> <span class="span1">Lorem ipsum dolor sit amet, consectetur</span> <span class="span2">adipiscing elit, sed do eiusmod tempor</span> <span class="span3">incididunt ut labore et dolore magna</span> <span  class="span4">aliqua. Ut enim ad minim </span>  </p>
+    <p class=" header-para1"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim   </p>
     <button class="button1 mt-3 mb-3">Read More </button>
   </div>
 </div>

@@ -108,12 +108,17 @@
 @media only screen and (max-width:576px) {
    
     .para1, .beauti-title, .para2 {
-     font-size:20px;
-     margin-left: 90px;
+     font-size:180px;
+     margin-left: 190px;
      
     }
     .carousel-caption{
-        margin-left:90px;
+        margin-left:-390px;
         
     }
+    /* .carousel-item{
+        height: 10vh;
+        width: 100%;
+   
+    } */
   }

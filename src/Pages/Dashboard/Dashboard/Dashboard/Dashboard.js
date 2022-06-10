@@ -36,7 +36,7 @@ const Dashboard = () => {
                   {/* <div class="dashboard "> */}
                         <h5>Online Store</h5>
                        
-                       <div class="mt-5 ">
+                       <div class="mt-5 dashboard-link">
                        
                         <Link class="abul" to="/dashboard">
                         <li  class="dashboard-menu mt-5 dec-1"><i class="bi bi-speedometer das"></i>Dashboard</li>
