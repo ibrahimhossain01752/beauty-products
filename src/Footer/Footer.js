@@ -12,7 +12,7 @@ const Footer = () => {
   <div class="col ">
     <div class=" h-100">
      
-      <div class="card-body ">
+      <div class="card-body one">
         <h5 class="card-title text-start">CONTACT US</h5>
         <p class="card-text33"><span className="span4 text-start">No: 58 A, East Madison</span><span class="card-33 text-start">Baltimore, MD,USA</span></p>
 <p class="text-start"><i class="bi bi-telephone-fill phone-cl"></i><span class="first-cl">+91 12345678</span></p>
@@ -26,9 +26,9 @@ const Footer = () => {
   <div class="col">
     <div class=" h-100">
     
-      <div class="card-body ">
-        <h5 class="card-title">HELP</h5>
-       <p class="text-center one">Search</p>
+      <div class="card-body two">
+        <h5 class="card-title title-too">HELP</h5>
+       <p class="text-center one two-three">Search</p>
        <p class="text-hlp">Help</p>
        <p class="text-inform">Information</p>
        <p class="text-policy">Privacy Policy</p>
@@ -40,8 +40,8 @@ const Footer = () => {
   <div class="col">
     <div class=" h-100">
     
-      <div class="card-body ">
-        <h5 class="card-title">SUPPORT</h5>
+      <div class="card-body">
+        <h5 class="card-title sup-one">SUPPORT</h5>
         <p class="text-us">Contact us</p>
         <p class="text-about">About us</p>
         <p class="text-car">Careers</p>

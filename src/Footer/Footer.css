@@ -195,3 +195,45 @@
     background-color:rgb(255, 255, 255);
     color:black;
 }
+@media only screen and (max-width: 576px) {
+    .one {
+        margin-left:100px;
+        color:black;
+    }
+    .two{
+        margin-left:-95px;
+    }
+    .two-three{
+        margin-left:1px;
+    }
+    .title-too{
+        margin-right: -px;
+    }
+    .text-inform{
+        margin-left:40px;
+    }
+    .text-policy{
+        margin-left:50px;
+    }
+    .text-details{
+        margin-left:70px;
+    }
+    .sup-one{
+        margin-right: 56px;
+    }
+    .text-us{
+        margin-right: 66px;
+    }
+    .text-about{
+        margin-right: 70px;
+    }
+    .text-car{
+        margin-right: 76px;
+    }
+    .text-refunds{
+        margin-right: 35px;
+    }
+    .text-deliver{
+        margin-right: 55px;
+    }
+  }
