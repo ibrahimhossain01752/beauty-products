@@ -37,7 +37,15 @@
   .reg-one{
     text-decoration: none;
   }
-  
+  @media only screen and (max-width: 600px) {
+    .form-control {
+      width: 300px;
+      margin-left: 10px;
+    }
+    .signIn{
+      width: 300px;
+    }
+  }
   /* .label-two{
     width: 100%;
   } */

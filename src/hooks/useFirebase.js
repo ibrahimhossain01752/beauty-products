@@ -37,13 +37,13 @@ const useFirebase  = () => {
 
    
 
-    const loginUser = (email, password, location, navigate) => {
+   /*  const loginUser = (email, password, location, navigate) => {
         setIsLoading(true);
         signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
-          const redirect = location.state?.from || "/home";
-
-            navigate.replace(redirect);
+          const destination = location.state?.from || "/home";
+            console.log(userCredential);
+             navigate.replace(destination);
             setAuthError('');
         })
         .catch((error) => {
@@ -52,7 +52,22 @@ const useFirebase  = () => {
         })
         .finally(() => setIsLoading(false));
       
-    }
+    } */
+
+    const loginUser = (email, password, location, history) => {
+      setIsLoading(true);
+      signInWithEmailAndPassword(auth, email, password)
+          .then((userCredential) => {
+              const destination = location?.state?.from || '/';
+              history.replace(destination);
+              setAuthError('');
+          })
+          .catch((error) => {
+              setAuthError(error.message);
+          })
+          .finally(() => setIsLoading(false));
+  }
+
 
   
 

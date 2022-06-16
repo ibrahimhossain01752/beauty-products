@@ -1,8 +1,10 @@
-import React, { useEffect, useState } from 'react';
+ import React, { useEffect, useState } from 'react';
+
 import useFirebase from '../../../../hooks/useFirebase';
 
 const ManageOrder = () => {
     const { user} = useFirebase();
+   
     const [orders, setOrders] = useState([]);
     const [IsDelete, setIsDelete] = useState(false);
 
@@ -41,7 +43,7 @@ const ManageOrder = () => {
         console.log(id)
         const confirmDelete = "Are You Sure To this Orders!"
         if(window.confirm(confirmDelete)){
-           fetch(`https://fathomless-headland-38595.herokuapp.com/dashboard/manageOrder/deleted/${id}`, {
+           fetch(`http://localhost:5000/dashboard/manageOrder/deleted/${id}`, {
                method: 'DELETE',
             }).then(res => res.json())
             .then(data=> {
@@ -94,4 +96,5 @@ const ManageOrder = () => {
     );
 };
 
-export default ManageOrder;
+export default ManageOrder; 
+

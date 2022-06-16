@@ -10,11 +10,13 @@
     width: 100%;
     
   }
+ 
 
   .main-dashboard{
     background-color: #0011ff;
     width:20%;
-    height:600px;
+    /* height:700px; */
+    margin-bottom: -140px;
     padding:20px;
     position: relative;
      }

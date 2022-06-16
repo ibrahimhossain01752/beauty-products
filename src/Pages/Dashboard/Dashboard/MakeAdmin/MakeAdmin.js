@@ -1,5 +1,6 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import './MakeAdmin.css';
 
 const MakeAdmin = () => {
     const { register, handleSubmit } = useForm();
@@ -24,12 +25,12 @@ const MakeAdmin = () => {
     
     return (
         <div>
-      <h1>make admin</h1>
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <h1 class="make-admin">Make admin</h1>
+      <form class="make-from" onSubmit={handleSubmit(onSubmit)}>
         <input
           className="input-field"
           name="email"
-          placeholder="Email"
+          placeholder="email"
           type="email"
           {...register("email", { required: true })}
         />

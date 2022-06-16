@@ -18,7 +18,7 @@ const Register = () => {
         newLoginData[filed] = value;
         setLoginData(newLoginData);
     }
-    const handleSigninSubmit = e => {
+    const handleLoginSubmit = e => {
         if(loginData.password !== loginData.password2){
             alert('your password did not match');
             return
@@ -40,7 +40,7 @@ const Register = () => {
         <div class="card border-0 shadow rounded-3 my-5">
           <div class="card-body p-4 p-sm-5">
             <h5 class="card-title text-center mb-5 fw-light fs-5">Register</h5>
-          { !isLoading && <form onSubmit={handleSigninSubmit}>
+          { !isLoading && <form onSubmit={handleLoginSubmit}>
               <div class="form-floating mb-3">
                 <input type="email" onChange={handleOnChange} class="form-control" id="floatingInput" name="email" placeholder="name@example.com"/>
                 <label for="floatingInput">Email address</label>

@@ -19,11 +19,17 @@ const Login = () => {
         newLoginData[filed] = value;
         setLoginData(newLoginData);
     }
-    const handleSigninSubmit = e => {
+    /* const handleSigninSubmit = e => {
         loginUser(loginData.email, loginData.password, location, navigate);
         navigate.push(redirect);
         e.preventDefault();
-    }
+    } */
+    const handleLoginSubmit = e => {
+      loginUser(loginData.email, loginData.password, location, navigate);
+      // console.log(loginUser);
+      navigate.push(redirect);
+      // e.preventDefault();
+  }
 
     const handleGoogleSignIn = () => {
       signInWithGoogle(location, navigate);
@@ -38,13 +44,13 @@ const Login = () => {
         <div class="card border-0 shadow rounded-3 my-5">
           <div class="card-body p-4 p-sm-5">
             <h5 class="card-title text-center mb-5 fw-light fs-5">Sign In</h5>
-            <form onSubmit={handleSigninSubmit}>
+            <div>
               <div class="form-floating mb-3">
-                <input type="email" onChange={handleOnChange} class="form-control" id="floatingInput" placeholder="name@example.com"/>
+                <input type="email" name="email" onChange={handleOnChange} class="form-control" id="floatingInput" />
                 <label class="label-two" for="floatingInput">Email address</label>
               </div>
               <div class="form-floating mb-3">
-                <input type="password" onChange={handleOnChange} class="form-control" id="floatingPassword" placeholder="Password"/>
+                <input type="password" name="password" onChange={handleOnChange} class="form-control" id="floatingPassword" />
                 <label for="floatingPassword">Password</label>
               </div>
 
@@ -55,10 +61,10 @@ const Login = () => {
                 </label>
               </div> */}
               <div class="d-grid ">
-                <button class="btn btn-primary btn-login text-uppercase fw-bold signIn text-center"  type="submit"><span class="text-centerr">Sign
+                <button onClick={handleLoginSubmit} class="btn btn-primary btn-login text-uppercase fw-bold signIn text-center"  type="submit"><span class="text-centerr">Sign
                   in</span></button>
               </div>
-              </form>
+              </div>
               <hr class="my-4"/>
               <div class="d-grid mb-2">
                 <button class="btn btn-google btn-login text-uppercase fw-bold" type="" onClick={handleGoogleSignIn}>

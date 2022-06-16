@@ -38,14 +38,16 @@ function App() {
         <Route path="/Collection/:id" element={<PrivateRoute><PlaceOrder /></PrivateRoute>} />
         <Route path="/placeorder" element={<PrivateRoute><PlaceOrder /></PrivateRoute>} />
         <Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>} >
-                      <Route path={`myBooking`} element={<MyBooking />} />
-                       <Route path={`/dashboard/review`} element={<Review />} />
-                       <Route path={`/dashboard/myBooking`} element={<MyBooking />} />
-                       <Route path={`payments`} element={<Payments />} />
-                       <Route path={`/dashboard/manageOrder`} element={<AdminRoute><ManageOrder /></AdminRoute>} ></Route>
-                       <Route path={`/dashboard/makeAdmin`} element={<AdminRoute><MakeAdmin /></AdminRoute>} ></Route>
-                       <Route path={`/dashboard/addService`} element={<AdminRoute><AddService /></AdminRoute>} ></Route>
-                       <Route path={`/dashboard/manageService`} element={<AdminRoute><ManageService /></AdminRoute>} ></Route>
+                      <Route path="myBooking" element={<MyBooking />} />
+                       <Route path="review" element={<Review />} />
+                       <Route path="myBooking" element={<MyBooking />} />
+                       <Route path="payments" element={<Payments />} />
+                      
+                       <Route path="manageOrder" element={<ManageOrder />} ></Route>
+                     
+                       <Route path="makeAdmin" element={<MakeAdmin />} ></Route>
+                       <Route path="addService" element={<AddService />} ></Route>
+                       <Route path="manageService" element={<ManageService />} ></Route>
                       
                        
                        
