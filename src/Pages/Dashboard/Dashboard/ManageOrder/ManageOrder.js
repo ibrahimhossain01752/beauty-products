@@ -59,7 +59,7 @@ const ManageOrder = () => {
 
     return (
         <div>
-            <h1>All Orders {orders.length}</h1>
+            {/* <h1 class="orders-two">All Orders {orders.length}</h1> */}
             <table class="table">
   <thead>
     <tr>

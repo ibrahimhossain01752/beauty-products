@@ -4,7 +4,7 @@ import './Blog.css';
 const Blog = () => {
     return (
         <div className="container homecard">
-        <div class="row row-cols-1 row-cols-md-2 g-4" data-aos="fade-up"
+        <div class="row row-cols-1 row-cols-md-3 g-4" data-aos="fade-up"
      data-aos-duration="3000">
         <div class="col-md-2">
 <div class=" ">

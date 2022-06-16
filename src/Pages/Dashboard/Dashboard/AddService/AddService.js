@@ -1,7 +1,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import useFirebase from '../../../../hooks/useFirebase';
-
+import './AddService.css';
 const AddService = () => {
     const { user} = useFirebase();
 
@@ -26,37 +26,37 @@ const AddService = () => {
     return (
         <div>
       <div>
-        <h1 className="mt-5 text-center text-danger">Please Add Services</h1>
+        {/* <h1 className="mt-5 text-center text-danger">Please Add Services</h1> */}
         <div className=" w-25 m-auto mt-5">
           <div className=" ">
-            <div className="">
-              <form onSubmit={handleSubmit(onSubmit)}>
+            <div className="addServices">
+              <form className="from-five" onSubmit={handleSubmit(onSubmit)}>
                 <input
                   {...register("name")}
                   placeholder="Name"
-                  className="p-2 m-2 w-100 input-field"
+                  className="p-2 m-2  input-field input-one"
                 />
 
                 <input
                   {...register("description")}
                   placeholder="Description"
-                  className="p-2 m-2 w-100 input-field"
+                  className="p-5 m-2 input-field input-one"
                 />
 
                 <input
                   {...register("image", { required: true })}
                   placeholder="Image Link"
-                  className="p-2 m-2 w-100 input-field"
+                  className="p-2 m-2  input-field input-one"
                 />
 
                 <input
                   {...register("price", { required: true })}
                   placeholder="Price"
                   type="number"
-                  className="p-2 m-2 w-100 input-field"
+                  className="p-2 m-2 input-field input-one"
                 />
 
-                <select {...register("model")} className="p-2 m-2 w-100">
+                <select {...register("model")} className="p-2 m-2 input-one">
                   <option value="premium">premium</option>
                   <option value="classic">classic</option>
                   <option value="business">business</option>
@@ -68,7 +68,7 @@ const AddService = () => {
                 <input
                   type="submit"
                   value="Add"
-                  className="btn btn-info w-50"
+                  className="btn btn-info input-one"
                 />
               </form>
             </div>
