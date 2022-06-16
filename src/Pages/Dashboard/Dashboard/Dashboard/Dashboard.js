@@ -35,40 +35,44 @@ const Dashboard = () => {
               
                         <h5>Online Store</h5>
                        
+                      {!isAdmin &&
                        <div class="mt-5 dashboard-link">
                        
-                        <Link class="abul" to="/dashboard">
-                        <li  class="dashboard-menu mt-5 dec-1"><i class="bi bi-speedometer das"></i>Dashboard</li>
-                        </Link>
-                        <Link class="abul" to="myBooking">
-                        <li class="dashboard-menu mt-5 text-decoration-none book"><i class="bi bi-bag-fill das"></i>My-Booking</li>
-                        </Link>
-                        <Link class="abul" to="payments">
-                        <li class="dashboard-menu mt-5 text-decoration-none pay"><i class="bi bi-credit-card-2-front-fill das-1"></i>Payments</li>
-                        </Link>
-                        <Link class="abul lotif mb-5 " to="review">
-                        <li class="dashboard-menu mt-5 text-decoration-none review"><i class="bi bi-award-fill das-2 g-2"></i>Review</li>
-                        </Link>
-                        
-                        
-                       </div>
+                       <Link class="abul" to="/dashboard">
+                       <li  class="dashboard-menu mt-5 dec-1"><i class="bi bi-speedometer das"></i>Dashboard</li>
+                       </Link>
+                       <Link class="abul" to="myBooking">
+                       <li class="dashboard-menu mt-5 text-decoration-none book"><i class="bi bi-bag-fill das"></i>My-Booking</li>
+                       </Link>
+                       <Link class="abul" to="payments">
+                       <li class="dashboard-menu mt-5 text-decoration-none pay"><i class="bi bi-credit-card-2-front-fill das-1"></i>Payments</li>
+                       </Link>
+                       <Link class="abul lotif mb-5 " to="review">
+                       <li class="dashboard-menu mt-5 text-decoration-none review"><i class="bi bi-award-fill das-2 g-2"></i>Review</li>
+                       </Link>
+                       
+                       
+                      </div>
+                      }
                        
 
 { isAdmin &&
-                <div class="admin-dashboard pt-5">
-                     <Link class="p-3" to="manageOrder">
-                       <li class="dashboard-menu mt-5 text-decoration-none">Manage Order</li>
+                <div class="admin-dashboard pt-5 ">
+                    <div class="admin-list">
+                    <Link class="p-3 manageOrder" to="manageOrder">
+                       <li class="dashboard-menu mt-5 text-decoration-none ">Manage Order</li>
                      </Link>
-                     <Link class="p-3" to="addService">
+                     <Link class="p-3 addService" to="addService">
                        <li class="dashboard-menu">Add Service</li>
                      </Link>
                 
-                   <Link class="p-3" to="makeAdmin">
+                   <Link class="p-3 makeAdmin" to="makeAdmin">
                      <li class="dashboard-menu text-decoration-none">Make Admin</li>
                    </Link>
-                   <Link class="p-3" to="manageServices">
+                   <Link class="p-3 manageServices" to="manageServices">
                      <li class="dashboard-menu text-decoration-none">Manage Service</li>
                    </Link>
+                    </div>
                  </div>
                }
                       
