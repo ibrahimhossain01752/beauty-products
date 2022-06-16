@@ -69,7 +69,7 @@ const Dashboard = () => {
                    <Link class="p-3 makeAdmin" to="makeAdmin">
                      <li class="dashboard-menu text-decoration-none">Make Admin</li>
                    </Link>
-                   <Link class="p-3 manageServices" to="manageServices">
+                   <Link class="p-3 manageServices" to="manageService">
                      <li class="dashboard-menu text-decoration-none">Manage Service</li>
                    </Link>
                     </div>
