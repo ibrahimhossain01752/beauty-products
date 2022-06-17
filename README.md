@@ -1,11 +1,14 @@
-# Getting Started with Create React App
+Live site: https://beauty-products-6f822.web.app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
+ This is a e-commerce related website.
+ Designed, developed and kept adding new functions and UI to a multifunctional services.
+ User can Log in via Email and password, Google with firebase authentication.
+ User can order product and give a review for each products website.
+ Customize dashboard users and admin.
+ Admin can manage all products, services, user information as well admin can added
+  another admin.
+ Technology Used: HTML5, React, React Bootstrap, Firebase,
+  Node js, Express js, MongoDB and Heroku.
 ### `npm start`
 
 Runs the app in the development mode.\
