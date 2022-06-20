@@ -1,13 +1,13 @@
 Live site: https://beauty-products-6f822.web.app
 
- This is a e-commerce related website.
- Designed, developed and kept adding new functions and UI to a multifunctional services.
- User can Log in via Email and password, Google with firebase authentication.
- User can order product and give a review for each products website.
- Customize dashboard users and admin.
- Admin can manage all products, services, user information as well admin can added
+1. This is a e-commerce related website.
+2. Designed, developed and kept adding new functions and UI to a multifunctional services.
+3.User can Log in via Email and password, Google with firebase authentication.
+4.User can order product and give a review for each products website.
+5.Customize dashboard users and admin.
+6. Admin can manage all products, services, user information as well admin can added
   another admin.
- Technology Used: HTML5, React, React Bootstrap, Firebase,
+7.Technology Used: HTML5, React, React Bootstrap, Firebase,
   Node js, Express js, MongoDB and Heroku.
 ### `npm start`
 
