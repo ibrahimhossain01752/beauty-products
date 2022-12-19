@@ -1,4 +1,4 @@
-Live site: https://beauty-products-6f822.web.app
+Live site: https://beauty-products-6f822.web.app/
 
 1.This is a e-commerce related website.
 
