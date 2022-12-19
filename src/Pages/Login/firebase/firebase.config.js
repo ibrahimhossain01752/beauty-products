@@ -1,4 +1,4 @@
-const firebaseConfig = {
+/* const firebaseConfig = {
     apiKey: process.env.REACT_APP_API_KEY,
     authDomain: process.env.REACT_APP_AUTH_DOMAIN,
     projectId: process.env.REACT_APP_PROJECT_ID,
@@ -7,7 +7,18 @@ const firebaseConfig = {
     appId: process.env.REACT_APP_APP_ID,
   };
   export default firebaseConfig;
+ */
 
+  const firebaseConfig = {
+    apiKey: "AIzaSyD7BpUn92fbOX3BdppML22DPr--T5_FzD8",
+    authDomain: "beauty-products-6f822.firebaseapp.com",
+    projectId: "beauty-products-6f822",
+    storageBucket: "beauty-products-6f822.appspot.com",
+    messagingSenderId: "956602867236",
+    appId: "1:956602867236:web:1540f7ae7e2c77d2c9c2b1"
+  };
+  export default firebaseConfig;
+  
   
   /* 
   

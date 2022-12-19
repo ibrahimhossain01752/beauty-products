@@ -10,7 +10,10 @@
     background: #0e0e0f;
     overflow: hidden
 }
-
+.lt_p{
+    margin-right: 890px;
+    color:palevioletred;
+}
 .product .imgbox {
     height: 100%;
     box-sizing: border-box

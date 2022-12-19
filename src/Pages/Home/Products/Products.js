@@ -14,7 +14,8 @@ const Products = () => {
 
     return (
          <div class="container">
-          <div class="row row-cols-1 row-cols-md-4 g-4 " data-aos="fade-up"
+          <h2 class="lt_p mt-5">Latest Products</h2>
+          <div class="row row-cols-1 row-cols-md-4 g-4 mt-2" data-aos="fade-up"
      data-aos-duration="3000">
             {newServices.map((pd,idx)=>(
                 <div class="col">

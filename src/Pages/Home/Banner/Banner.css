@@ -48,7 +48,7 @@
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: rgba(0, 0, 0, 0.6);
+	/* background: rgba(0, 0, 0, 0.6); */
 	z-index: 1;
 }
 .carousel-indicators {
@@ -57,7 +57,7 @@
 .carousel-indicators button {
 	width: 100px !important;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+/* @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.navbar-nav {
 		text-align: center;
 	}
@@ -103,7 +103,7 @@
 		background: #fff;
 	}
 }
-
+ */
 
 
 
