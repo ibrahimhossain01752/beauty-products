@@ -13,7 +13,7 @@ const AddService = () => {
       } = useForm();
     
       const onSubmit = (data) => {
-        fetch("http://localhost:5000/dashboard/addService", {
+        fetch("https://beauty-products-server-production.up.railway.app/dashboard/addService", {
           method: "POST",
           headers: { "content-type": "application/json" },
           body: JSON.stringify(data),

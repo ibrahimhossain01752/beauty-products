@@ -17,7 +17,7 @@ const PlaceOrder = () => {
  const navigate = useNavigate();
  
  useEffect(()=>{
-  fetch(`http://localhost:5000/Collection/${id}`)
+  fetch(`https://beauty-products-server-production.up.railway.app/Collection/${id}`)
   .then((res) => res.json())
   .then((result) => {
     setOrder(result[0])
@@ -40,7 +40,7 @@ const PlaceOrder = () => {
              data.dis = orders.dis;
 
     console.log(data)
-    fetch("http://localhost:5000/placeorderInsert", {
+    fetch("https://beauty-products-server-production.up.railway.app/placeorderInsert", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(data),

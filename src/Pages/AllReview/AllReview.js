@@ -5,7 +5,7 @@ const AllReview = () => {
     const [reviews, setReviews] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:5000/allReview")
+        fetch("https://beauty-products-server-production.up.railway.app/allReview")
         .then(res => res.json())
         .then(data => setReviews(data))
     },[reviews]);

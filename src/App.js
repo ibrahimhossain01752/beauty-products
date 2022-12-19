@@ -1,11 +1,12 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
-import AuthProvider from './contexts/AuthProvider/AuthProvider';
+import AuthProvider from './Contexts/AuthProvider/AuthProvider';
+// import AuthProvider from './contexts/AuthProvider/AuthProvider';
 import Footer from './Footer/Footer';
 import Blogs from './Pages/Blog/Blog/Blogs';
 import Collections from './Pages/Collection/Collections';
 import AddService from './Pages/Dashboard/Dashboard/AddService/AddService';
-import AdminRoute from './Pages/Dashboard/Dashboard/AdminRoute/AdminRoute';
+// import AdminRoute from './Pages/Dashboard/Dashboard/AdminRoute/AdminRoute';
 import Dashboard from './Pages/Dashboard/Dashboard/Dashboard/Dashboard';
 import MakeAdmin from './Pages/Dashboard/Dashboard/MakeAdmin/MakeAdmin';
 import ManageOrder from './Pages/Dashboard/Dashboard/ManageOrder/ManageOrder';

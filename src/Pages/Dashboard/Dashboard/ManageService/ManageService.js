@@ -8,7 +8,7 @@ const ManageService = () => {
     const [IsDelete, setIsDelete] = useState(false);
 
     useEffect(()=>{
-        fetch(`http://localhost:5000/dashboard/manageServices`)
+        fetch(`https://beauty-products-server-production.up.railway.app/dashboard/manageServices`)
         .then(res=> res.json())
         .then(data=>{
          setOrders(data)
@@ -22,7 +22,7 @@ const ManageService = () => {
        console.log(id)
        const confirmDelete = "Are You Sure To Delete this Orders??"
        if(window.confirm(confirmDelete)){
-          fetch(`http://localhost:5000/dashboard/manageServices/deleted/${id}`, {
+          fetch(`https://beauty-products-server-production.up.railway.app/dashboard/manageServices/deleted/${id}`, {
               method: 'DELETE',
            }).then(res => res.json())
            .then(data=> {

@@ -121,7 +121,7 @@ const useFirebase  = () => {
    
   const  StoreUserInformation = ({ email, name, method}) => {
     const user = {email, name}
-    fetch('http://localhost:5000/signup/userInformation', {
+    fetch('https://beauty-products-server-production.up.railway.app/signup/userInformation', {
       method: 'POST',
       headers: { "content-type": "application/json" },
       body: JSON.stringify(user)

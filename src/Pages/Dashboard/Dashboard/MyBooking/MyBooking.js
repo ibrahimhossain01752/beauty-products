@@ -12,7 +12,7 @@ const MyBooking = () => {
     const [IsDelete, setIsDelete] = useState(true);
 
     useEffect(()=>{
-        fetch(`http://localhost:5000/dashboard/myBooking?email=${user?.email}`)
+        fetch(`https://beauty-products-server-production.up.railway.app/dashboard/myBooking?email=${user?.email}`)
         .then(res => res.json())
         .then((data) => {
             console.log(data);
@@ -24,7 +24,7 @@ const MyBooking = () => {
         console.log(id);
         const confirmDelete ="Are you to this order!"
         if(window.confirm(confirmDelete)){
-            fetch(`http://localhost:5000/dashboard/myBooking/deleted/${id}`,{
+            fetch(`https://beauty-products-server-production.up.railway.app/dashboard/myBooking/deleted/${id}`,{
                 method: "DELETE",
             }).then(res => res.json())
             .then(data => {

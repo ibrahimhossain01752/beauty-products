@@ -6,7 +6,7 @@ import './Cosmetics.css';
 const Cosmetics = () => {
     const [services, setServices] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/Collection')
+        fetch('https://beauty-products-server-production.up.railway.app/Collection')
         .then(res => res.json())
         .then(data => setServices(data))
     },[]);

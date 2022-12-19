@@ -6,7 +6,7 @@ const MakeAdmin = () => {
     const { register, handleSubmit } = useForm();
 
     const onSubmit = (data) => {
-        fetch("http://localhost:5000/dashboard/makeAdmin", {
+        fetch("https://beauty-products-server-production.up.railway.app/dashboard/makeAdmin", {
           method: "PUT",
           headers: { "content-type": "application/json" },
           body: JSON.stringify(data),

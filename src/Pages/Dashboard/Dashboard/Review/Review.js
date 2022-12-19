@@ -9,7 +9,7 @@ const Review = () => {
 
     const onSubmit = (data) => {
         data.img = user.photoURL;
-        fetch("http://localhost:5000/addSReview", {
+        fetch("https://beauty-products-server-production.up.railway.app/addSReview", {
           method: "POST",
           headers: { "content-type": "application/json" },
           body: JSON.stringify(data),

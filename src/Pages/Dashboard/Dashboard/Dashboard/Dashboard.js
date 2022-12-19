@@ -13,7 +13,7 @@ const Dashboard = () => {
     
 
     useEffect(()=> {
-        fetch(`http://localhost:5000/checkAdmin/${user?.email}`)
+        fetch(`https://beauty-products-server-production.up.railway.app/checkAdmin/${user?.email}`)
         .then(res => res.json())
         .then(data => {
             console.log(data)
